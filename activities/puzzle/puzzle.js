@@ -35,7 +35,8 @@
         "\\\[icon\\\]([^\\\[]+)\\\[/icon\\\]",      "<div class='icon' style='float:left'><img src='$1'/></div>",
         "\\\[icon2\\\]([^\\\[]+)\\\[/icon2\\\]",    "<div class='icon' style='float:left;font-size:2em;'><img src='$1'/></div>",
         "\\\[icon3\\\]([^\\\[]+)\\\[/icon3\\\]",    "<div class='icon' style='float:left;font-size:3em;'><img src='$1'/></div>",
-        "\\\[icon4\\\]([^\\\[]+)\\\[/icon4\\\]",    "<div class='icon' style='float:left;font-size:4em;'><img src='$1'/></div>"
+        "\\\[icon4\\\]([^\\\[]+)\\\[/icon4\\\]",    "<div class='icon' style='float:left;font-size:4em;'><img src='$1'/></div>",
+        "\\\[code](.+)\\\[/code]",                  "<div class='code'>$1</div>"
     ];
 
     // private methods
@@ -192,7 +193,7 @@
             
             // AUTOMATIC GENERATION
             if (settings.gen) {
-                var gen = eval('('+settings.gen+')')(settings.puzzleid);
+                var gen = eval('('+settings.gen+')')($this,settings,settings.puzzleid);
                 if (gen.values) { settings.values = gen.values; }
                 if (gen.id)     { settings.id = gen.id; }
                 if (gen.txt)    { settings.txt = gen.txt; }
@@ -261,6 +262,7 @@
             if (settings.rot) {
                 var rot = $.isArray(settings.rot)?settings.rot[settings.puzzleid]:settings.rot;
                 for (var i in rot) {$("#"+i+" .rot",settings.svg.root()).attr("transform","rotate("+rot[i]+")"); }
+				
             }
             
             // FIX THE TRANSLATION OF PIECES
@@ -318,9 +320,9 @@
                         translate = [parseFloat(vSplit[1]), parseFloat(vSplit[2])];
                     }
                     var rotate = 0;
-                    if ($(this).find(".rot") && $(this).find(".rot").attr("transform")) {
+                    if ($(this).find(".rot") && $(this).find(".rot").last().attr("transform")) {
                         var reg = new RegExp("[( ),]","g");
-                        var vSplit = $(this).find(".rot").attr("transform").split(reg);
+                        var vSplit = $(this).find(".rot").last().attr("transform").split(reg);
                         rotate = parseFloat(vSplit[1]);
                     }
                     var elt = { $elt   : $(this),
@@ -363,7 +365,7 @@
                     });
 
                     // INITIALIZE THE PIECE
-                    var vX = translate[0], vY = translate[1], vZ = 0;
+                    var vX = translate[0], vY = translate[1], vZ = rotate;
                     var id = $(this).attr("id");
                     if (settings.rotation>0 && $(this).find(".rot")) {
                         vZ = settings.rotation*Math.floor(Math.random()*(360/settings.rotation));
@@ -469,6 +471,14 @@
                     if (tdist<10 && now.getTime()-settings.action.tick<400) {
                         elt.current.rotate = (elt.current.rotate+settings.rotation)%360;
                     }
+					
+					// STAY IN DESKTOP
+					if (elt.current.translate[0]<0) 					{ elt.current.translate[0] = 0; }
+					if (elt.current.translate[1]<0) 					{ elt.current.translate[1] = 0; }
+					if (elt.current.translate[0]>settings.width) 		{ elt.current.translate[0] = settings.width; }
+					
+					var footer = $this.hasClass("exup")?0.8:1;
+					if (elt.current.translate[1]>3*footer*settings.width/4) 	{ elt.current.translate[1] = 3*footer*settings.width/4; }
 
                     // CHECK MAGNETIC
                     if (settings.decoyfx || !elt.decoy)
@@ -556,7 +566,8 @@
                             var isgood = false;
                             var target = settings.elts[pieces[p]];
                             
-                            if ((target.current.translate[0]==elt.origin.translate[0])&&
+                            if ( target &&
+								(target.current.translate[0]==elt.origin.translate[0])&&
                                 (target.current.translate[1]==elt.origin.translate[1])) {
                                 isgood = true;
                                 // CHECK THE ROTATION

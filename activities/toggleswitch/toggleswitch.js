@@ -33,6 +33,7 @@
         "\\\[green\\\]([^\\\[]+)\\\[/green\\\]",    "<span style='color:green'>$1</span>",
         "\\\[red\\\]([^\\\[]+)\\\[/red\\\]",        "<span style='color:red'>$1</span>",
         "\\\[h1\\\]([^\\\[]+)\\\[/h1\\\]",          "<div style='text-align:center; font-size:3em;font-weight:bold;'>$1</div>",
+        "\\\[h2\\\]([^\\\[]+)\\\[/h2\\\]",          "<div style='text-align:center; font-size:1.5em;font-weight:bold;'>$1</div>",
         "\\\[img\\\]([^\\\[]+)\\\[/img\\\]",        "<div style='width:100%'><img src='$1' alt=''/></div>",
         "\\\[icon\\\]([^\\\[]+)\\\[/icon\\\]",      "<div class='icon' style='font-size:1.2em;float:left'><img src='$1' alt=''/></div>",
         "\\\[icon2\\\]([^\\\[]+)\\\[/icon2\\\]",    "<div class='icon' style='font-size:2em;float:left'><img src='$1' alt=''/></div>",
@@ -125,7 +126,7 @@
             var settings = helpers.settings($this), o = elt.state;
             if (settings.states.style) {
                 var style   = {};
-                if (o<0 && settings.show && settings.wrong && settings.wrong.style ) { style = settings.wrong.style; }
+                if (o<0 && settings.show && settings.wrong && settings.wrong.style ) { style = settings.wrong.style;}
                 if (o>=0) { style = settings.states.style[o%settings.states.style.length]; }
                 for (var i in style) { elt.elt.css(i, style[i]); }
             }
@@ -184,11 +185,7 @@
             var vToggle = (settings.current.group?"#"+settings.current.group+" ":"")+"."+settings.toggle;
             $this.find(vToggle).each(function(index) {
                 var elt={ elt:$(this), state:0 };
-
-                if (settings.init.length>index) { elt.state = parseInt(settings.init[index]); }
-                var init = settings.init;
-                if (!init && settings.values) { init = settings.values[settings.it%settings.values.length].init;  }
-                if (init && init.length>index) { elt.state = parseInt(init[index]); }
+                if (settings.current.init) { elt.state = parseInt(settings.current.init[index%settings.current.init.length]); }
 
                 settings.current.elts.push(elt);
                 helpers.refresh($this,elt);
@@ -204,11 +201,20 @@
                 else { $this.find("#illustration").html("<img src='"+vIllus+"'/>"); }
             }
 
-            // HANDLE THE LEGEND
-            var vLegend = settings.legend;
+             // HANDLE THE LEGEND
+            var vLegend = settings.current.legend || settings.legend;
             if ($.isArray(vLegend)) { vLegend = vLegend[settings.it%vLegend.length]; }
 
             if (vLegend) { $this.find("#legend").html(helpers.format(vLegend)); }
+			
+			// HANDLE STATIC TEXT OR IMAGE IN SVG
+            var txt = settings.current.txt;
+            if (txt) {
+                for (var i in txt) {
+                    if (txt[i].toString().indexOf(".svg")!=-1)  { $("#"+i,settings.svg.root()).attr("xlink:href",txt[i]).show(); }
+					else 							            { $("#"+i,settings.svg.root()).text(txt[i]).show(); }
+                }
+            }
             
             // HANDLE THE ERRELT
             if (settings.errelt) {
@@ -247,7 +253,7 @@
             settings.current=settings.values?settings.values[settings.it%settings.values.length]:settings;
             
             if (settings.current.gen) {
-                var gen = eval('('+settings.current.gen+')')();
+                var gen = eval('('+settings.current.gen+')')($this,settings,settings.it);
                 settings.current = $.extend({}, gen);
             }
             
@@ -257,8 +263,7 @@
             if (settings.template)                              { settings.current.template = settings.template; }
             
             if (settings.exercice && settings.exercice.tag)     { settings.current.tag    = settings.exercice.tag;}
-
-            
+			
             // HANDLE THE EXERCICE
             if (settings.exercice) {
                 if ($.type(settings.exercice)=="string") {
@@ -333,6 +338,8 @@
                     if (settings.current.t && settings.current.t.length>index) { $(this).text(value); }});
                 helpers.fill($this);
             }
+			
+			
         },
         timer: function($this) {
             var settings = helpers.settings($this);

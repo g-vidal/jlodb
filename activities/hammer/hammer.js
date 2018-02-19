@@ -13,7 +13,6 @@
         mode        : "default",
         totaltime   : 40,
         freq        : 1,
-        animation   : 1,
         goodfx      : false,
         background  : "",                                   // Background image
         debug       : true                                     // Debug mode
@@ -172,6 +171,18 @@
                             p02:"p00", p12:"p00", p22:"p00", p32:"p00"
                             };
                             break
+                        case "classic_6" : settings.holes = {
+                            p00:{ pack:firstpack, anim:{top:[0.5,-0.28,-0.28,0.5]}, clickanim:{top:0.5},
+                                  duration:[4,1]},
+                            p10:"p00", p20:"p00", p01:"p00", p11:"p00", p21:"p00"
+                            };
+                            break
+                        case "classic_3" : settings.holes = {
+                            p00:{ pack:firstpack, anim:{top:[0.5,-0.28,-0.28,0.5]}, clickanim:{top:0.5},
+                                  duration:[4,1]},
+                            p10:"p00", p20:"p00"
+                            };
+                            break
                         case "simple": settings.holes = {
                             p00:{ pack:firstpack, anim:{opacity:[0,1,1,0]}, clickanim:{opacity:0}, duration:[4,1]},
                             p10:"p00", p20:"p00", p30:"p00",
@@ -247,7 +258,7 @@
                     }
                     var legend = sprite.legend;
                     if (sprite.gen) {
-                        var gen = eval('('+sprite.gen+')')();
+                        var gen = eval('('+sprite.gen+')')($this,settings);
                         if (typeof(gen.legend)!="undefined")     { legend = gen.legend.toString(); }
                         if (gen.alignment)  { sprite.alignment = gen.alignment; }
                         if (gen.src)        {

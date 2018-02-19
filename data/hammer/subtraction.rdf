@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dct="http://purl.org/dc/terms/">
+
+ 
+    <rdf:Description>
+        <dct:identifier>c10</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10.</dct:title>
+        <dct:description><![CDATA["freq":2,"class":"smalllegend","holes":"classic","sprdata":{"d":[{"alignment":"good","type":"embed","gen":"function(){var a=Math.floor(Math.random()*9)+2,b=Math.floor(Math.random()*(a-1))+1; return {legend:''+a+'-'+b+'='+(a-b)};}"},{"alignment":"wrong","type":"embed","gen":"function(){var c,a=Math.floor(Math.random()*9)+2,b=Math.floor(Math.random()*(a-1))+1; do { c=Math.floor(Math.random()*10)+1; } while(c==a-b); return {legend:''+a+'-'+b+'='+c};}"}]}]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Cliquez sur les soustractions [b]exactes[/b]."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+    
+    <rdf:Description>
+        <dct:identifier>c10x</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10.</dct:title>
+        <dct:description><![CDATA["freq":1.5]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>3</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c10</dct:relation>
+    </rdf:Description>
+    
+    <rdf:Description>
+        <dct:identifier>c10y</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10.</dct:title>
+        <dct:description><![CDATA["freq":1]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>4</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c10</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>c103</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10.</dct:title>
+        <dct:description><![CDATA["holes":"classic_3","board":"classic_3.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c10</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>c106</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10.</dct:title>
+        <dct:description><![CDATA["holes":"classic_6","board":"classic_6.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c10</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>d10</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10 [ville].</dct:title>
+        <dct:description><![CDATA["board":"city.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>3</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c10</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>d103</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10 [ville].</dct:title>
+        <dct:description><![CDATA["holes":"classic_3","board":"city_3.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c10</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>d106</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10 [ville].</dct:title>
+        <dct:description><![CDATA["holes":"classic_6","board":"city_6.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c10</dct:relation>
+    </rdf:Description>
+    
+    <rdf:Description>
+        <dct:identifier>c20</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont la diminuende est inférieure à 20.</dct:title>
+        <dct:description><![CDATA["freq":2,"class":"smalllegend","holes":"classic","sprdata":{"d":[{"alignment":"good","type":"embed","gen":"function(){var a=Math.floor(Math.random()*19)+2,b; do { b=Math.floor(Math.random()*10)+1; } while (b>=a || a-b>10); return {legend:''+a+'-'+b+'='+(a-b)};}"},{"alignment":"wrong","type":"embed","gen":"function(){var a=Math.floor(Math.random()*19)+2,b,c; do { b=Math.floor(Math.random()*10)+1; c=Math.floor(Math.random()*10)+1; } while (b>=a || a-b>10 || c==a-b); return {legend:''+a+'-'+b+'='+c};}"}]}]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Cliquez sur les soustractions [b]exactes[/b]."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>3</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+    
+    <rdf:Description>
+        <dct:identifier>c20x</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont la diminuende est inférieure à 20.</dct:title>
+        <dct:description><![CDATA["freq":1.5]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>4</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c20</dct:relation>
+    </rdf:Description>
+    
+    <rdf:Description>
+        <dct:identifier>c20y</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont la diminuende est inférieure à 20.</dct:title>
+        <dct:description><![CDATA["freq":1]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>5</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c20</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>c203</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont la diminuende est inférieure à 20.</dct:title>
+        <dct:description><![CDATA["holes":"classic_3","board":"classic_3.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c20</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>c206</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont la diminuende est inférieure à 20.</dct:title>
+        <dct:description><![CDATA["holes":"classic_6","board":"classic_6.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c20</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>d20</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10 [ville].</dct:title>
+        <dct:description><![CDATA["board":"city.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>3</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c20</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>d203</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10 [ville].</dct:title>
+        <dct:description><![CDATA["holes":"classic_3","board":"city_3.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c20</dct:relation>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>d206</dct:identifier>
+        <dct:title xml:lang="fr-FR">Cliquez sur les soustractions exactes dont les opérandes sont inférieures ou égales à 10 [ville].</dct:title>
+        <dct:description><![CDATA["holes":"classic_6","board":"city_6.html"]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>subtraction</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>c10</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:relation>c20</dct:relation>
+    </rdf:Description>
+
+    
+</rdf:RDF>
+

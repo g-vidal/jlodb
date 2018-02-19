@@ -109,7 +109,7 @@
                 if (settings.locale) { $.each(settings.locale, function(id,value) { $this.find("#"+id).html(value); }); }
 
                 // ADD BACKGROUND
-                if (settings.background) { $this.children().first().css("background-image","url("+settings.background+")"); }
+                if (settings.background) { $this.css("background-image","url("+settings.background+")"); }
                 
                 if (!$this.find("#splashex").is(":visible")) { setTimeout(function() { $this[settings.name]('next'); }, 500); }
             }
@@ -162,7 +162,7 @@
             for (var i=0; i<nbvalues; i++) {
                 var vValue;
                 do {
-                    if (settings.gen)  { vValue = eval('('+settings.gen+')')(i,settings.elts); }
+                    if (settings.gen)  { vValue = eval('('+settings.gen+')')($this, settings, i); }
                     else {
                         if (nbvalues==vValues.length) { vValue = vValues[i]; }
                         else {

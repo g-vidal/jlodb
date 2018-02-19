@@ -7,6 +7,7 @@
         lang        : "fr-FR",                  // Current localization
         number      : 20,                       // Number of questions
         time        : 1,                        // Sequence time reference
+        timemode    : 0,                        // 0: global, 1: individual
         score       : 1,                        // The score (from 1 to 5)
         shuffle     : true,                     // Shuffle the questions
         keyboard    : true,                     // The keyboard is authorized
@@ -173,16 +174,16 @@
                 if (!settings.gen) {
                     var cpt = 0;
                     for (var i=0; i<settings.values.length; i++) { vValueArray.push(settings.values[i]); }
-                    if (settings.shuffle) { vValueArray.sort(function(){return Math.random()-0.5; }); }
+                    if (settings.shuffle) { for (var i=0;i<50;i++) { vValueArray.sort(function(){return (Math.random()>0.5); }); } }
                     for (var i=0; i<settings.number-settings.values.length; i++) { vValueArray.push(vValueArray[i%settings.values.length]); }
-                    if (settings.shuffle) { vValueArray.sort(function(){return Math.random()-0.5; }); }
+                    if (settings.shuffle) { for (var i=0;i<50;i++) { vValueArray.sort(function(){return (Math.random()>0.5); }); } }
                 }
 
                 for (var i=0; i<settings.number; i++) {
                     var $li = $("<li></li>").appendTo($ul), vNewValue, vValue = { question:0, response:0};
 
                     // Get the question
-                    if (settings.gen)   { vNewValue = eval('('+settings.gen+')')(); }
+                    if (settings.gen)   { vNewValue = eval('('+settings.gen+')')($this,settings,i); }
                     else                { vNewValue = vValueArray[i%vValueArray.length]; }
 
                     // The question may be an array [question, response], otherwise response is evaluated from the question
@@ -207,13 +208,14 @@
                 $this.find("#screen>div").html("&#xA0;");
                 $this.find("#guide_number").html(settings.number);
                 if (!settings.time) {
-                    $this.find("#time").html("&#xA0;");
+                    $this.find("#timeval").html("&#xA0;");
                     $this.find("#guide_time").html("........");
                 }
                 else {
-                    var vTime = helpers.formattime(Math.floor(settings.time*settings.number));
-                    $this.find("#time").html(vTime);
-                    $this.find("#guide_time").html(vTime);
+                    var vTime = helpers.formattime(
+                        Math.floor(settings.time*(settings.timemode?1:settings.number))*1000);
+                    $this.find("#timeval").html(vTime);
+                    $this.find("#guide_time").html((settings.timemode?"× ":"")+vTime);
                 }
 
                 if (settings.context.onload) { settings.context.onload($this); }
@@ -240,23 +242,35 @@
             }
         },
         formattime: function(_val) {
-            var vS = _val%60;
-            var vM = Math.floor(_val/60)%60;
-            var vH = Math.floor(_val/3600);
-            if (vH>99) { vS=99; vM=99; vH=99; }
-            return (vH<10?"0":"")+vH+(vM<10?":0":":")+vM+(vS<10?":0":":")+vS;
+            _val=Math.floor(_val/100);
+            var vMS = _val%10;
+            var vS  = Math.floor(_val/10)%100;
+            var vM  = Math.floor(_val/1000);
+            if (vM>59) { vMS=9; vS=99; vM=59; }
+            return (vM<10?"0":"")+vM+(vS<10?":0":":")+vS+"."+vMS;
         },
         // Update the timer
         timer:function($this) {
             var settings = helpers.settings($this);
-            var $time = $this.find("#time");
-            settings.timer.value++;
             if (settings.time) {
-                var diff = Math.floor(Math.abs(settings.time*settings.number-settings.timer.value));
-                $time.text(helpers.formattime(diff));
-                $time.toggleClass("late", (settings.timer.value>settings.time*settings.number));
+                var $time   = $this.find("#timeval");
+                var delay   = Date.now() - settings.timer.begin;
+                var ref     = settings.time*(settings.timemode==0?settings.number:1);
+                var diff    = ref*1000 - delay;
+                $time.text(helpers.formattime(Math.abs(diff)));
+                $time.parent().toggleClass("late", (diff<0));
+                if (diff>=0) {
+                    var ratio = 100-(diff/(ref*10));
+                    $this.find("#timeslider").width(ratio+"%");
+                }
+                else {
+                    $this.find("#timeslider").width("100%");
+                    if (settings.timemode==1) { helpers.timeout($this); }
+                }
             }
-            settings.timer.id = setTimeout(function() { helpers.timer($this); }, 1000);
+            if (settings.interactive) {
+                settings.timer.id = setTimeout(function() { helpers.timer($this); }, 50);
+            }
         },
         move: function($this, _anim) {
             var settings = helpers.settings($this);
@@ -264,6 +278,8 @@
             $this.find("#values li").each(function(index) { if (index<settings.it) { vHeight = vHeight - $(this).outerHeight(); } });
             if (_anim)  { $this.find("#values ul").animate({top: vHeight+"px"}, 250, function() { helpers.next($this); }); }
             else        { $this.find("#values ul").css("top", vHeight+"px"); }
+            
+            if (settings.timemode==1) { settings.timer.begin = Date.now(); }
         },
         hidefx: function($this) { $this.find("#effects>div").hide(); },
         next: function($this) {
@@ -279,7 +295,10 @@
                 value = value.toString();
 
                 // Launch the timer if didn't
-                if (!settings.timer.id) { helpers.timer($this); }
+                if (!settings.timer.id) {
+                    settings.timer.begin = Date.now();
+                    helpers.timer($this);
+                }
 
                 // if a timeout was called on the keypad, clear it out
                 if (settings.keypadtimer) { window.clearTimeout(settings.keypadtimer); settings.keypadtimer=0; }
@@ -323,7 +342,7 @@
                             if (!helpers.check($this, (settings.input.speed==0)))
                             {
                                 if ((settings.input.speed!=0)) {
-                                    settings.keypadtimer = window.setTimeout(function() { helpers.timeout($this, true); },
+                                    settings.keypadtimer = window.setTimeout(function() { helpers.timeout($this); },
                                                                         settings.input.speed);
                             }
                         }
@@ -331,18 +350,12 @@
                 }
             }
         },
-        // Compute the score
-        score:function(timeref, time, wrong) {
-            var t = (5-wrong);
-            if (timeref>0 && timeref/time<1) { t=Math.floor(t*timeref/time); }
-            if (t>5) { t=5; }
-            if (t<0) { t=0; }
-            return t;
-        },
         // Keypad time out is finished, force the check
         timeout: function($this) {
             var settings = helpers.settings($this);
+            clearTimeout(settings.keypadtimer);
             settings.keypadtimer=0;
+			settings.response.value="";
             helpers.check($this,true);
         },
         // Check the user entry
@@ -353,19 +366,22 @@
             if (settings.interactive) {
 
                 // Check the response
-                if ($.isArray(settings.questions[settings.it].response)) {
-                  for (var i in settings.questions[settings.it].response) {
-                    if ((!settings.strict&&settings.questions[settings.it].response[i]==settings.response.value) ||
-                         (settings.strict&&settings.questions[settings.it].response[i].toString()==settings.response.value.toString()))
-                    {
-                      vRet = true;
-                    }
-                  }
-                }
-                else {
-                    vRet=((!settings.strict && settings.questions[settings.it].response == settings.response.value) ||
-                          ( settings.strict && settings.questions[settings.it].response.toString()==settings.response.value.toString()));
-                }
+				if (settings.response.value.toString().length)
+				{
+					if ($.isArray(settings.questions[settings.it].response)) {
+					  for (var i in settings.questions[settings.it].response) {
+						if ((!settings.strict&&settings.questions[settings.it].response[i]==settings.response.value) ||
+							 (settings.strict&&settings.questions[settings.it].response[i].toString()==settings.response.value.toString()))
+						{
+						  vRet = true;
+						}
+					  }
+					}
+					else {
+						vRet=((!settings.strict && settings.questions[settings.it].response == settings.response.value) ||
+							  ( settings.strict && settings.questions[settings.it].response.toString()==settings.response.value.toString()));
+					}
+				}
 
                 if (vRet || force) {
 
@@ -396,7 +412,11 @@
                     if (++settings.it==settings.number) {
                         settings.interactive = false;
                         clearTimeout(settings.timer.id);
-                        settings.score = helpers.score(settings.time*settings.number, settings.timer.value, settings.wrong);
+                        
+                        settings.score = 5 - settings.wrong;
+                        if (settings.timemode==0 && $this.find("#time").hasClass("late")) { settings.score--; }
+                        if (settings.score<0) { settings.score = 0; }
+      
                         setTimeout(function() { helpers.end($this); }, 1000);
                     }
                     settings.response.digit = 0;
@@ -422,7 +442,7 @@
                     keypadtimer     : 0,                        // Keypadtimer (in case of more than one digit)
                     timer: {                                    // The general timer
                         id      : 0,                            // The timer id
-                        value   : 0                             // The timer value
+                        begin   : 0                             // The begining time
                     },
                     interactive     : false,                    // Entry allowed or not
                     combo           : 0,                        // Successive good response
@@ -469,6 +489,7 @@
             quit: function() {
                 var $this = $(this), settings = helpers.settings($this);
                 if (settings.timer.id) { clearTimeout(settings.timer.id); settings.timer.id=0; }
+                helpers.unbind($this);
                 settings.finish = true;
                 settings.context.onquit($this,{'status':'abort'});
             }
