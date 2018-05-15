@@ -2,51 +2,10 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:dct="http://purl.org/dc/terms/">
 
-    <!-- Vocabulary wv[.] -->
+
 
     <rdf:Description>
-        <dct:identifier>wva01</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer chaque nom d'animal à son illustration.</dct:title>
-        <dct:description><![CDATA["regexp":{"question":{ "from": "(.+)","to":"<div class=\\\"char\\\" style=\\\"font-size:1.2em;\\\"><img src=\\\"res/img/clipart/$1.svg\\\"/></div>"}},"values":[["animal/ape01","gorille"],["animal/bear01","ours"],["animal/bird03","oiseau"],["animal/bull01","taureau"],["animal/cat01","chat"],["animal/chamois01","chamois"],["animal/chicken01","poule"],["animal/cow01","vache"],["animal/crane01","grue"],["animal/crocodile01","crocodile"],["animal/crow01","corbeau"],["animal/dog04","chien"],["animal/duck02","canard"],["animal/fawn01","faon"],["animal/frog01","grenouille"],["animal/goldfish01","poisson"],["animal/elephant01","éléphant"],["animal/fox01","renard"],["animal/giraffe01","girafe"],["animal/goat04","chèvre"],["animal/goose01","oie"],["animal/hog01","cochon"],["animal/horse01","cheval"],["animal/lama01","lama"],["animal/lion01","lion"],["animal/mice01","souris"],["animal/monkey01","singe"],["animal/mule01","ane"],["animal/owl01","hibou"],["animal/panda02","panda"],["animal/peacock01","paon"],["animal/pelican01","pélican"],["animal/penguin01","pingouin"],["animal/pigeon01","pigeon"],["animal/prairiedog01","marmotte"],["animal/rabbit02","lapin"],["animal/rhinoceros01","rhinocéros"],["animal/rooster02","coq"],["animal/seahorse01","hippocampe"],["animal/shark01","requin"],["animal/sheep01","mouton"],["animal/snake01","serpent"],["animal/swan01","cygne"],["animal/turtle01","tortue"],["animal/wolf01","loup"],["animal/zebra01","zèbre"]],"bgcolor":["rgba(180,180,180,0.9)","rgba(255,252,246,0.9)"],"nbvalues":5,"number":4,"class":"h12","font":1.5,"len":3]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez chaque [b]nom d'animal[/b] à son [red]illustration[/red].","fontex":0.5]]></dct:description>
-        <dct:extent>1</dct:extent>
-        <dct:subject>frword</dct:subject>
-        <dct:educationLevel>1</dct:educationLevel>
-        <dct:type>1</dct:type>
-        <dct:alternative>wva01</dct:alternative>
-        <dct:source>res/img/clipart/animal/</dct:source>
-    </rdf:Description>
-
-    <rdf:Description>
-        <dct:identifier>wvv01</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer chaque verbe à son illustration.</dct:title>
-        <dct:description><![CDATA["regexp":{"question":{ "from": "(.+)","to":"<div class=\\\"char\\\" style=\\\"font-size:1.2em;\\\"><img src=\\\"res/img/clipart/$1.svg\\\"/></div>"}},"values":[["event/childplaying01","jouer"],["event/drinkscoffee01","boire"],["event/phone01","téléphoner"],["event/reading01","lire"],["event/runningboy01","courir"],["people/carrier01","porter"],["sport/archer01","tirer"],["sport/bowlingplayer01","lancer"],["sport/dancer01","danser"],["sport/jumping01","sauter"]],"bgcolor":["rgba(180,180,180,0.9)","rgba(255,252,246,0.9)"],"nbvalues":4,"number":3,"class":"h12","font":1.7,"len":2]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez chaque [b]verbe[/b] à son [red]illustration[/red].","fontex":0.5]]></dct:description>
-        <dct:extent>1</dct:extent>
-        <dct:subject>frword</dct:subject>
-        <dct:educationLevel>1</dct:educationLevel>
-        <dct:type>1</dct:type>
-        <dct:alternative>wva01</dct:alternative>
-        <dct:source>res/img/clipart/event/childplaying01.svg,res/img/clipart/event/drinkscoffee01.svg,res/img/clipart/event/phone01.svg,res/img/clipart/event/reading01.svg,res/img/clipart/event/runningboy01.svg,res/img/clipart/people/carrier01.svg,res/img/clipart/sport/archer01.svg,res/img/clipart/sport/bowlingplayer01.svg,res/img/clipart/sport/dancer01.svg,res/img/clipart/sport/jumping01.svg</dct:source>
-    </rdf:Description>
-    
-
-    <!-- Character -->
-
-	<rdf:Description>
-        <dct:identifier>wl01</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer la lettre majuscule à sa minuscule.</dct:title>
-        <dct:description><![CDATA["values":[[["a","A"],["b","B"],["c","C"],["d","D"],["e","E"],["f","F"],["g","G"],["h","H"],["i","I"],["j","J"],["k","K"],["l","L"],["m","M"],["n","N"],["o","O"],["p","P"],["q","Q"],["r","R"],["s","S"],["t","T"],["u","U"],["v","V"],["w","W"],["x","X"],["y","Y"],["z","Z"]]],"nbvalues":5,"number":4,"class":"h12","font":1.5,"len":3]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez chaque lettre majuscule à son équivalent minuscule.","fontex":0.5]]></dct:description>
-        <dct:extent>1</dct:extent>
-        <dct:subject>languages</dct:subject>
-        <dct:educationLevel>1</dct:educationLevel>
-        <dct:type>1</dct:type>
-        <dct:alternative>wl01</dct:alternative>
-    </rdf:Description>
-
-    <rdf:Description>
-        <dct:identifier>ws01</dct:identifier>
+        <dct:identifier>_ws01</dct:identifier>
         <dct:title xml:lang="fr-FR">Reconstituer syntaxiquement les phrases proposées.</dct:title>
         <dct:description><![CDATA["values":[[["Le petit chat","boit du lait."],["Le","ciel est bleu."],["Le soir,","je suis fatiguée."],["Il est","déjà parti ?"]],[["Aujourd'hui,","il fait très beau."],["J'adore","les bonbons."],["Elle joue","au football."],["L'oiseau","vole dans le ciel."]]],"class":"h12","font":0.8,"len":7]]></dct:description>
         <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Reconstituez correctement les phrases suivantes.","fontex":0.5]]></dct:description>
@@ -54,11 +13,11 @@
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>1</dct:educationLevel>
         <dct:type>1</dct:type>
-        <dct:alternative>ws01</dct:alternative>
+        <dct:alternative>_ws01</dct:alternative>
     </rdf:Description>
 
     <rdf:Description>
-        <dct:identifier>ws11</dct:identifier>
+        <dct:identifier>_ws11</dct:identifier>
         <dct:title xml:lang="fr-FR">Reconstituer sémantiquement les phrases proposées.</dct:title>
         <dct:description><![CDATA["values":[[["La terre","tourne autour du soleil."],["La facteur","apporte le courrier."],["L'oiseau","vole dans le ciel."],["Le vase","est cassé."]],[["Le petit singe","mange une banane."],["L'eau","est fraîche."],["La poubelle","est pleine."],["Cette voiture","roule très vite."]]],"class":"h12","font":0.8,"len":7]]></dct:description>
         <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Reconstituez correctement les phrases suivantes.","fontex":0.5]]></dct:description>
@@ -66,164 +25,212 @@
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>1</dct:educationLevel>
         <dct:type>1</dct:type>
-        <dct:alternative>ws01</dct:alternative>
+        <dct:alternative>_ws01</dct:alternative>
+    </rdf:Description>
+	
+	<!-- VOCABULARY -->
+	
+    <rdf:Description>
+        <dct:identifier>_wv01a</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer chaque mot à son illustration [des nombres].</dct:title>
+        <dct:description><![CDATA["values":[[["1","un"],["2","deux"],["3","trois"],["4","quatre"],["5","cinq"]],[["6","six"],["7","sept"],["8","huit"],["9","neuf"],["10","dix"]]],"class":"h12","font":1.5,"len":4]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] chaque terme à la valeur correspondante.","fontex":0.5]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frword</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+        <dct:alternative>_wv01a</dct:alternative>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>_wv02a</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer chaque mot à son illustration [des couleurs].</dct:title>
+        <dct:description><![CDATA["values":[[["<div style='width:5em;height:1.2em;background-color:blue'></div>","bleu"],["<div style='width:5em;height:1.2em;background-color:red'></div>","rouge"],["<div style='width:5em;height:1.2em;background-color:green'></div>","vert"],["<div style='width:5em;height:1.2em;background-color:black'></div>","noir"],["<div style='width:5em;height:1.2em;background-color:yellow'></div>","jaune"]],[["<div style='width:5em;height:1.2em;background-color:rgb(255,100,0)'></div>","orange"],["<div style='width:5em;height:1.2em;background-color:white'></div>","blanc"],["<div style='width:5em;height:1.2em;background-color:rgb(100,50,0)'></div>","marron"],["<div style='width:5em;height:1.2em;background-color:gray'></div>","gris"],["<div style='width:5em;height:1.2em;background-color:rgb(255,200,50)'></div>","doré"]]],"class":"h12","font":1.5,"len":4]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] chaque terme à la couleur correspondante.","fontex":0.5]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frword</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+        <dct:alternative>_wv01a</dct:alternative>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>_wv03a</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer chaque son à l'image correspondante [la rentrée].</dct:title>
+        <dct:description><![CDATA["values":[[["[char]ext/noto/svg/emoji_u1f4bc.svg[/char]","le cartable"],["[char]ext/noto/svg/emoji_u1f3eb.svg[/char]","l'école"],["[char]ext/noto/svg/emoji_u1f46d.svg[/char]","ma copine"],["[char]ext/noto/svg/emoji_u1f46c.svg[/char]","mon copain"],["[char]ext/noto/svg/emoji_u1f4bb.svg[/char]","l'ordinateur"]]],"bgcolor":["rgba(180,180,180,0.9)","rgba(255,252,246,0.9)"],"class":"h12 sym","font":1.5,"len":3]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] chaque terme à l'[red]illustration[/red] correspondante.","fontex":0.5]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frword</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+        <dct:alternative>_wv01a</dct:alternative>
+        <dct:source>ext/noto/svg/emoji_u1f4bc.svg,ext/noto/svg/emoji_u1f3eb.svg,ext/noto/svg/emoji_u1f46d.svg,ext/noto/svg/emoji_u1f46c.svg,ext/noto/svg/emoji_u1f4bb.svg</dct:source>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>_wv04a</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer chaque son à l'image correspondante [des animaux].</dct:title>
+        <dct:description><![CDATA["values":[[["[char]ext/noto/svg/emoji_u1f415.svg[/char]","un chien"],["[char]ext/noto/svg/emoji_u1f438.svg[/char]","une grenouille"],["[char]ext/noto/svg/emoji_u1f426.svg[/char]","l'oiseau"],["[char]ext/noto/svg/emoji_u1f422.svg[/char]","une tortue"],["[char]ext/noto/svg/emoji_u1f400.svg[/char]","un rat"]],[["[char]ext/noto/svg/emoji_u1f40e.svg[/char]","un cheval"],["[char]ext/noto/svg/emoji_u1f408.svg[/char]","un chat"],["[char]ext/noto/svg/emoji_u1f425.svg[/char]","un canari"],["[char]ext/noto/svg/emoji_u1f407.svg[/char]","un lapin"],["[char]ext/noto/svg/emoji_u1f41f.svg[/char]","un poisson"]]],"bgcolor":["rgba(180,180,180,0.9)","rgba(255,252,246,0.9)"],"class":"h12 sym","font":1.5,"len":3]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] chaque terme à l'[red]illustration[/red] correspondante.","fontex":0.5]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frword</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+        <dct:alternative>_wv01a</dct:alternative>
+        <dct:source>ext/noto/svg/emoji_u1f415.svg,ext/noto/svg/emoji_u1f438.svg,ext/noto/svg/emoji_u1f426.svg,ext/noto/svg/emoji_u1f422.svg,ext/noto/svg/emoji_u1f400.svg,ext/noto/svg/emoji_u1f40e.svg,ext/noto/svg/emoji_u1f408.svg,ext/noto/svg/emoji_u1f425.svg,ext/noto/svg/emoji_u1f407.svg,ext/noto/svg/emoji_u1f41f.svg</dct:source>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>_wv05a</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer chaque son à l'image correspondante [des véhicules].</dct:title>
+        <dct:description><![CDATA["values":[[["[char]ext/noto/svg/emoji_u1f697.svg[/char]","la voiture"],["[char]ext/noto/svg/emoji_u1f681.svg[/char]","l'hélicoptère"],["[char]ext/noto/svg/emoji_u1f69b.svg[/char]","un camion"],["[char]ext/noto/svg/emoji_u1f6f3.svg[/char]","le bateau"],["[char]ext/noto/svg/emoji_u1f686.svg[/char]","le train"]],[["[char]ext/noto/svg/emoji_u1f6e9.svg[/char]","l'avion"],["[char]ext/noto/svg/emoji_u1f68c.svg[/char]","le car"],["[char]ext/noto/svg/emoji_u1f698.svg[/char]","l'auto"],["[char]ext/noto/svg/emoji_u1f3cd.svg[/char]","une moto"],["[char]ext/noto/svg/emoji_u1f695.svg[/char]","un taxi"]]],"bgcolor":["rgba(180,180,180,0.9)","rgba(255,252,246,0.9)"],"class":"h12 sym","font":1.5,"len":3]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] chaque terme à l'[red]illustration[/red] correspondante.","fontex":0.5]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frword</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+        <dct:alternative>_wv01a</dct:alternative>
+        <dct:source>ext/noto/svg/emoji_u1f697.svg,ext/noto/svg/emoji_u1f681.svg,ext/noto/svg/emoji_u1f69b.svg,ext/noto/svg/emoji_u1f6f3.svg,ext/noto/svg/emoji_u1f686.svg,ext/noto/svg/emoji_u1f6e9.svg,ext/noto/svg/emoji_u1f68c.svg,ext/noto/svg/emoji_u1f698.svg,ext/noto/svg/emoji_u1f3cd.svg,ext/noto/svg/emoji_u1f695.svg</dct:source>
     </rdf:Description>
 
     <!-- SYNONYMIE wa[.] -->
 
     <rdf:Description>
-        <dct:identifier>waa</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque adjectif</dct:title>
-        <dct:description><![CDATA["values":[[["jaloux","envieux"],["incompétent","incapable"],["beau","joli"]],[["doux","gentil"],["fatigué","épuisé"],["ignorant","inculte"]],[["lâche","pleutre"],["sanctionné","puni"],["changé","modifié"]],[["réduit","diminué"],["fini","terminé"],["cassé","abîmé"]]],"nbvalues":3,"number":4,"class":"h12","font":0.9,"len":7]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le synonyme de chaque adjectif"]]></dct:description>
-        <dct:extent>2</dct:extent>
+        <dct:identifier>_wasa</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque adjectif [4x3].</dct:title>
+        <dct:description><![CDATA["errratio":2,"values":[[["joyeux","heureux"],["incompétent","incapable"],["beau","joli"]],[["doux","gentil"],["fatigué","épuisé"],["drôle","amusant"]],[["cruel","méchant"],["charmant","séduisant"],["changé","modifié"]],[["réduit","diminué"],["fini","terminé"],["cassé","abîmé"]]],"nbvalues":3,"number":4,"class":"h12","font":1,"len":8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] le [red]synonyme[/red] de chaque adjectif"]]></dct:description>
+        <dct:extent>3</dct:extent>
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>2</dct:educationLevel>
         <dct:type>2</dct:type>
         <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
         <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
+        <dct:alternative>_wasa</dct:alternative>
     </rdf:Description>
 
     <rdf:Description>
-        <dct:identifier>wab</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque adjectif</dct:title>
-        <dct:description><![CDATA["values":[[["calme","tranquille"],["clair","lumineux"],["célèbre","fameux"],["sale","malpropre"],["vieux","ancien"]],[["violent","brutal"],["court","bref"],["rond","circulaire"],["gros","énorme"],["riche","fortuné"]],[["mauvais","néfaste"],["ridicule","grotesque"],["délicieux","succulant"],["passionnant","captivant"],["agité","remuant"]],[["doué","bon"],["abandonné","laissé"],["horrible","abominable"],["parfait","irréprochable"],["identique","semblable"]]],"nbvalues":5,"number":4,"class":"h12","font":0.9,"len":7]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le synonyme de chaque adjectif"]]></dct:description>
-        <dct:extent>2</dct:extent>
+        <dct:identifier>_wasb</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque adjectif  [3x5].</dct:title>
+        <dct:description><![CDATA["values":[[["calme","tranquille"],["clair","lumineux"],["célèbre","connu"],["sale","crasseux"],["vieux","ancien"]],[["violent","brutal"],["court","bref"],["identique","semblable"],["gros","énorme"],["riche","fortuné"]],[["mauvais","méchant"],["délicieux","bon"],["abandonné","laissé"],["agité","remuant"]]],"nbvalues":5,"number":3,"class":"h12","font":1,"len":8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] le [red]synonyme[/red] de chaque adjectif"]]></dct:description>
+        <dct:extent>3</dct:extent>
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>2</dct:educationLevel>
         <dct:type>2</dct:type>
         <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
         <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
+        <dct:alternative>_wasa</dct:alternative>
     </rdf:Description>
 
     <rdf:Description>
-        <dct:identifier>wac</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque verbe</dct:title>
-        <dct:description><![CDATA["values":[[["briser","casser"],["obtenir","avoir"],["voler","dérober"]],[["accorder","autoriser"],["commencer","débuter"],["permuter","inverser"]],[["expliquer","justifier"],["troquer","échanger"],["chercher","fouiller"]],[["regarder","contempler"],["surprendre","étonner"],["étudier","apprendre"]]],"nbvalues":3,"number":4,"class":"h12","font":0.9,"len":7]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le synonyme de chaque verbe"]]></dct:description>
-        <dct:extent>2</dct:extent>
+        <dct:identifier>_wasc</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque verbe  [4x3].</dct:title>
+        <dct:description><![CDATA["errratio":2,"values":[[["briser","casser"],["obtenir","avoir"],["voler","dérober"]],[["lancer","envoyer"],["commencer","débuter"],["gommer","effacer"]],[["changer","modifier"],["parler","dire"],["chercher","fouiller"]],[["regarder","voir"],["surprendre","étonner"],["étudier","apprendre"]]],"nbvalues":3,"number":4,"class":"h12","font":1,"len":8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] le [red]synonyme[/red] de chaque verbe."]]></dct:description>
+        <dct:extent>3</dct:extent>
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>2</dct:educationLevel>
         <dct:type>2</dct:type>
         <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
         <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
+        <dct:alternative>_wasa</dct:alternative>
     </rdf:Description>
 
     <rdf:Description>
-        <dct:identifier>wad</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque verbe</dct:title>
-        <dct:description><![CDATA["values":[[["aimer","adorer"],["s'enfuir","s'évader"],["découvrir","trouver"],["se rappeler","se souvenir"],["balbutier","bredouiller"]],[["commencer","débuter"],["finir","terminer"],["séparer","détacher"],["gouverner","administrer"],["embaucher","engager"]],[["donner","offrir"],["distinguer","apercevoir"],["réunir","assembler"],["affecter","bouleverser"],["mélanger","mixer"]],[["tolérer","accepter"],["rédiger","écrire"],["persuader","convaincre"],["décorer","orner"],["cacher","dissimuler"]]],"nbvalues":5,"number":4,"class":"h12","font":0.9,"len":7]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le synonyme de chaque verbe"]]></dct:description>
-        <dct:extent>2</dct:extent>
+        <dct:identifier>_wasd</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque verbe [3x5].</dct:title>
+        <dct:description><![CDATA["values":[[["aimer","adorer"],["s'enfuir","s'évader"],["découvrir","trouver"],["se rappeler","se souvenir"],["interroger","questionner"]],[["commencer","débuter"],["finir","terminer"],["séparer","détacher"],["jouer","s'amuser"],["manger","déjeuner"]],[["donner","offrir"],["distinguer","apercevoir"],["réunir","assembler"],["rédiger","écrire"],["mélanger","mixer"]]],"nbvalues":5,"number":3,"class":"h12","font":1,"len":8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] le [red]synonyme[/red] de chaque verbe."]]></dct:description>
+        <dct:extent>3</dct:extent>
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>2</dct:educationLevel>
         <dct:type>2</dct:type>
         <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
         <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
+        <dct:alternative>_wasa</dct:alternative>
     </rdf:Description>
 
     <rdf:Description>
-        <dct:identifier>wae</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque nom</dct:title>
-        <dct:description><![CDATA["values":[[["maison","demeure"],["travail","métier"],["escalade","ascension"]],[["roi","souverain"],["source","origine"],["aide","soutien"]],[["bébé","nourrisson"],["élève","étudiant"],["échec","défaite"]],[["ragot","rumeur"],["embarras","gêne"],["manière","façon"]]],"nbvalues":3,"number":4,"class":"h12","font":0.9,"len":7]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le synonyme de chaque nom"]]></dct:description>
-        <dct:extent>2</dct:extent>
+        <dct:identifier>_wase</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque nom [4x3].</dct:title>
+        <dct:description><![CDATA["errratio":2,"values":[[["une maison","une demeure"],["un travail","un métier"],["un verre","un gobelet"]],[["un habit","un vêtement"],["une voiture","une auto"],["une boutique","un magasin"]],[["un bébé","un nourrisson"],["un élève","un écolier"],["un échec","une défaite"]],[["une valise","un bagage"],["une bicyclette","un vélo"],["un pont","une passerelle"]]],"nbvalues":3,"number":4,"class":"h12","font":1,"len":8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] le [red]synonyme[/red] de chaque nom."]]></dct:description>
+        <dct:extent>3</dct:extent>
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>2</dct:educationLevel>
         <dct:type>2</dct:type>
         <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
         <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
+        <dct:alternative>_wasa</dct:alternative>
     </rdf:Description>
 
     <rdf:Description>
-        <dct:identifier>waf</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque nom</dct:title>
-        <dct:description><![CDATA["values":[[["corvée","besogne"],["prison","geôle"],["affront","outrage"],["bateau","navire"],["labyrinthe","dédale"]],[["rêve","songe"],["livre","ouvrage"],["voiture","automobile"],["succès","réussite"],["vélo","bicyclette"]],[["début","commencement"],["fin","bout"],["accord","autorisation"],["ornement","décoration"],["texte","écrit"]],[["passage","accès"],["lutte","combat"],["acteur","comédien"],["éloge","compliment"],["machine","appareil"]]],"nbvalues":5,"number":4,"class":"h12","font":0.9,"len":7]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le synonyme de chaque nom"]]></dct:description>
-        <dct:extent>2</dct:extent>
+        <dct:identifier>_wasf</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer le synonyme de chaque nom [3x5].</dct:title>
+        <dct:description><![CDATA["values":[[["le gazon","la pelouse"],["le chemin","la route"],["le cercle","le rond"],["le bateau","le navire"],["le chat","le matou"]],[["le foulard","l'écharpe"],["l'armoire","le placard"],["le cartable","le sac"],["la montagne","la colline"],["la chapeau","la bonnet"]],[["le copain","l'ami"],["l'école","la classe"],["le gosse","l'enfant"],["le calme","le silence"],["le bois","la forêt"]]],"nbvalues":5,"number":3,"class":"h12","font":1,"len":8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] le [red]synonyme[/red] de chaque nom."]]></dct:description>
+        <dct:extent>3</dct:extent>
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>2</dct:educationLevel>
         <dct:type>2</dct:type>
         <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
         <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
-    </rdf:Description>
-
-    <rdf:Description>
-        <dct:identifier>wag</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer les synonymes familiers à chaque nom</dct:title>
-        <dct:description><![CDATA["values":[[["jambe","guibole"],["visage","frimousse"],["dent","quenotte"],["argent","fric"]],[["homme","mec"],["bar","bistro"],["vêtement","fringue"],["chaussure","godasse"]],[["chevelure","tignasse"],["mobylette","bécane"],["policier","flic"],["voiture","bagnole"]],[["ventre","bide"],["enfant","môme"],["mensonge","bobard"],["ami","pote"]]],"nbvalues":4,"number":4,"class":"h12","font":0.9,"len":7]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le synonyme de chaque nom"]]></dct:description>
-        <dct:extent>2</dct:extent>
-        <dct:subject>frword</dct:subject>
-        <dct:educationLevel>2</dct:educationLevel>
-        <dct:type>2</dct:type>
-        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
-        <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
+        <dct:alternative>_wasa</dct:alternative>
     </rdf:Description>
 
     <!-- ANTONYMIE wa[A-Z] -->
 
     <rdf:Description>
-        <dct:identifier>waaa</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer l'antonyme de chaque adjectif</dct:title>
-        <dct:description><![CDATA["values":[[["long","court"],["gros","maigre"],["grand","petit"]],[["large","étroit"],["lourd","léger"],["gai","triste"]],[["beau","laid"],["rapide","lent"],["habile","maladroit"]],[["fort","faible"],["facile","difficile"],["mou","dur"]]],"nbvalues":3,"number":4,"class":"h12","font":1.3,"len":5]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le sens contraire des mots"]]></dct:description>
-        <dct:extent>2</dct:extent>
+        <dct:identifier>_wana</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer l'antonyme de chaque adjectif [4x3].</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/greenboard01.svg","errratio":2,"values":[[["long","court"],["gros","maigre"],["grand","petit"]],[["large","étroit"],["lourd","léger"],["gai","triste"]],[["beau","laid"],["rapide","lent"],["habile","maladroit"]],[["fort","faible"],["facile","difficile"],["mou","dur"]]],"nbvalues":3,"number":4,"class":"h12","font":1.3,"len":5]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Associez[/b] chaque mot à son [red]contraire[/red]."]]></dct:description>
+        <dct:extent>3</dct:extent>
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>2</dct:educationLevel>
         <dct:type>2</dct:type>
         <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
         <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
+        <dct:alternative>_wasa</dct:alternative>
+		<dct:source>res/img/background/landscape/greenboard01.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description>
-        <dct:identifier>wabb</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer l'antonyme de chaque adjectif</dct:title>
-        <dct:description><![CDATA["values":[[["vieux","jeune"],["ouvert","fermé"],["chaud","froid"],["debout","couché"],["célèbre","inconnu"]],[["courageux","lâche"],["rapide","lent"],["bruyant","silencieux"],["confiant","inquiet"],["actif","paresseux"]],[["gigantesque","minuscule"],["robuste","chétif"],["franc","sournois"],["intelligent","bête"],["simple","compliqué"]],[["moderne","désuet"],["absent","présent"],["doux","aigre"],["faux","vrai"],["ordinaire","insolite"]]],"nbvalues":5,"number":4,"class":"h12","font":1.3,"len":5]]></dct:description>
+        <dct:identifier>_wanb</dct:identifier>
+        <dct:title xml:lang="fr-FR">Associer l'antonyme de chaque adjectif [3x5].</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/greenboard01.svg","values":[[["vieux","jeune"],["ouvert","fermé"],["chaud","froid"],["debout","couché"],["célèbre","inconnu"]],[["courageux","lâche"],["rapide","lent"],["bruyant","silencieux"],["confiant","inquiet"],["actif","paresseux"]],[["gigantesque","minuscule"],["faux","vrai"],["doux","aigre"],["intelligent","bête"],["simple","compliqué"]]],"nbvalues":5,"number":3,"class":"h12","font":1.3,"len":5]]></dct:description>
         <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le sens contraire des mots"]]></dct:description>
-        <dct:extent>2</dct:extent>
+        <dct:extent>3</dct:extent>
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>2</dct:educationLevel>
         <dct:type>2</dct:type>
         <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
         <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
+        <dct:alternative>_wasa</dct:alternative>
+		<dct:source>res/img/background/landscape/greenboard01.svg</dct:source>
     </rdf:Description>
 
-    <rdf:Description>
-        <dct:identifier>waee</dct:identifier>
-        <dct:title xml:lang="fr-FR">Associer l'antonyme de chaque adjectif</dct:title>
-        <dct:description><![CDATA["values":[[["victoire","défaite"],["achat","vente"],["occident","orient"]],[["ami","ennemi"],["minorité","majorité"],["vie","mort"]],[["facilité","difficulté"],["présence","absence"],["perte","gain"]],[["force","faiblesse"],["clarté","obscurité"],["fin","début"]]],"nbvalues":3,"number":4,"class":"h12","font":1.3,"len":5]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le sens contraire des mots"]]></dct:description>
-        <dct:extent>2</dct:extent>
-        <dct:subject>frword</dct:subject>
-        <dct:educationLevel>2</dct:educationLevel>
-        <dct:type>2</dct:type>
-        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
-        <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
-    </rdf:Description>
+
 
     <rdf:Description>
-        <dct:identifier>waff</dct:identifier>
-        <dct:title xml:lang="fr-FR">Construire l'antonyme à partir d'un préfixe</dct:title>
-        <dct:description><![CDATA["values":[[["mal","adroit"],["im","possible"],["ir","respirable"],["dé","branché"],["il","logique"]],[["in","connu"],["dis","continu"],["il","lisible"],["dé","givré"],["im","prudent"]],[["ir","réel"],["in","fini"],["im","personnel"],["a","normal"],["dé","connecté"]],[["im","probable"],["in","juste"],["a","symétrique"],["dé","cousu"],["mal","honnête"]]],"nbvalues":5,"number":4,"class":"h12","font":1.3,"len":3]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Associez le bon préfixe"]]></dct:description>
-        <dct:extent>2</dct:extent>
+        <dct:identifier>_wan1</dct:identifier>
+        <dct:title xml:lang="fr-FR">Construire l'antonyme à partir d'un préfixe [4x3].</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/bluecarpet02.svg","values":[[["mal","adroit"],["im","possible"],["dé","branché"]],[["in","connu"],["mal","honnête"],["dé","givré"]],[["in","fini"],["a","normal"],["dé","connecté"]],[["mal","heureux"],["in","juste"],["dé","cousu"]]],"nbvalues":3,"number":4,"class":"h12","font":1.3,"len":3]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Construisez[/b] l'[red]antonyme[/red] à partir du bon [b]préfixe[/b]."]]></dct:description>
+        <dct:extent>3</dct:extent>
         <dct:subject>frword</dct:subject>
         <dct:educationLevel>2</dct:educationLevel>
         <dct:type>3</dct:type>
         <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
         <dct:isPartOf>synonymy</dct:isPartOf>
-        <dct:alternative>waa</dct:alternative>
+        <dct:alternative>_wan1</dct:alternative>
+		<dct:source>res/img/background/landscape/bluecarpet02.svg</dct:source>
     </rdf:Description>
+	
 </rdf:RDF>

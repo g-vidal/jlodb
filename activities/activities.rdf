@@ -6,7 +6,7 @@
         <dct:title xml:lang="fr-FR">Le boulier</dct:title>
         <dct:abstract xml:lang="fr-FR">L'activité du boulier permet à l'utilisateur d'utiliser un boulier chinois ou japonais pour compter, additioner ou multiplier.</dct:abstract>
         <dct:description xml:lang="fr-FR"><![CDATA["guide":"Déplacer les billes du boulier pour répondre aux problèmes demandés." ]]></dct:description>
-        <dct:source>res/img/banners/operation.svg,res/img/desktop/abacus/,res/img/background/landscape/brownboard01.svg</dct:source>
+        <dct:source>res/img/banners/operation.svg,res/img/desktop/abacus/,res/img/background/landscape/brownboard03.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description rdf:about="urn:activity:alchemist">
@@ -20,7 +20,7 @@
         <dct:title xml:lang="fr-FR">Assembleur 6502</dct:title>
         <dct:abstract xml:lang="fr-FR">Cette activité permet de réaliser des programmes en langage assembleur pour processeur 6502. Cet émulateur dispose en outre, d'une sortie standard, d'un écran graphique et d'une manette de jeu.</dct:abstract>
         <dct:description xml:lang="fr-FR"><![CDATA["guide":"Glisser les différents opérateurs et paramètres proposés par l'exercice vers la zone centrale. Lancer le programme en appuyant sur le bouton de lecture.","title":"Guide de l'assembleur 6502"]]></dct:description>
-        <dct:source>res/img/banners/it.svg,res/img/asset/misc/it*.svg</dct:source>
+        <dct:source>res/img/banners/it.svg,res/img/asset/misc/it*.svg,res/img/control/,res/img/background/asset/it01.svg,res/img/asset/fx/dialog01.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description rdf:about="urn:activity:balance">
@@ -34,14 +34,14 @@
         <dct:title xml:lang="fr-FR">Couleur</dct:title>
         <dct:abstract xml:lang="fr-FR">Cette application demande de reproduire un tableau à l'aide des couleurs et des pinceaux proposés.</dct:abstract>
         <dct:description xml:lang="fr-FR"><![CDATA["guide":"A l'aide des couleurs et des pinceaux fournis,  reproduire le tableau proposé.","mmode":"mode","mmode0":"opaque","mmode1":"additif","mmode2":"soustractif","mmode3":"auto","mbrush":"pinceaux","mcolor":"couleurs"]]></dct:description>
-        <dct:source></dct:source>
+        <dct:source>res/img/banners/paint2.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description rdf:about="urn:activity:calc">
         <dct:title xml:lang="fr-FR">Calc</dct:title>
         <dct:abstract xml:lang="fr-FR">Calc offre la possibilité de se familiariser avec l'utilisation d'un tableur. De nombreuses fonctionnalités sont disponibles : formules mathématiques, références relatives et absolues, remplissage automatique.</dct:abstract>
-        <dct:description xml:lang="fr-FR"><![CDATA["guide":"Remplir les cellules de la feuille de calcul suivant les consignes de l'exercice.[br]En utilisant la zone grise en bas du panneau de remplissage, il est possible de déplacer celui-ci.","tipc1":"Afficher le premier indice","tipc2":"Afficher le deuxième indice","tipc3":"Afficher le troisième indice","tipcc":"Un indice coûte 1 point sur la note finale, souhaitez-vous continuer ?"]]></dct:description>
-        <dct:source>res/img/banners/sorting.svg,res/img/icon/charts/,res/img/icon/tab/tab00.svg,res/img/control/tip.svg</dct:source>
+        <dct:description xml:lang="fr-FR"><![CDATA["guide":"Remplir les cellules de la feuille de calcul suivant les consignes de l'exercice.[br]En utilisant la zone grise en bas du panneau de remplissage, il est possible de déplacer celui-ci.","tipc1":"Afficher le premier indice","tipc2":"Afficher le deuxième indice","tipc3":"Afficher le troisième indice","tipcc":"Un indice coûte 1 point sur la note finale, souhaitez-vous continuer ?","cleancalc":"Effacer"]]></dct:description>
+        <dct:source>res/img/banners/sorting.svg,res/img/icon/charts/,res/img/icon/tab/tab00.svg,res/img/control/tip.svg,res/img/background/asset/move01.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description rdf:about="urn:activity:cards">
@@ -55,7 +55,7 @@
         <dct:title xml:lang="fr-FR">Code</dct:title>
         <dct:abstract xml:lang="fr-FR">Code est un système de programmation simple et intuitif. Il autorise la gestion d'objets complexes comme les chaînes de caractères et les tableaux. L'activité permet ainsi le traitement de n'importe quel type de données.</dct:abstract>
         <dct:description xml:lang="fr-FR"><![CDATA["guide":["Glisser les différents opérateurs et paramètres proposés par l'exercice vers la zone centrale. Lancer le programme en appuyant sur le bouton de lecture.","La note finale dépend du nombre d'indices dévoilés."],"mandraw":"Dessine à la position (X,Y) le sprite S de taille (W,H).","mandump":"Affiche la variable V sous la forme d'une valeur numérique.","manprint":"Affiche la variable V sous sa forme imprimable.","manpixel":"Colorie le pixel (X,Y) suivant la couleur configurée préalablement.","manrect":"Colorie un rectangle de taille (W,H) depuis la position (X,Y).","manline":"Trace une ligne entre les positions (X1,Y1) et (X2,Y2).","mancircle":"Trace un disque de centre (X,Y) et rayon R.","manreturn":"Renvoie, en fin de fonction, la valeur V.","manrgb":"Définit la couleur suivant les composantes Rouge, Vert, Bleu.","manpick":"Définit la couleur suivant le pixel de coordonnées (X,Y).","manfloor":"Renvoie l'entier directement inférieur à la valeur V.","manceil":"Renvoie l'entier directement supérieur à la valeur V.","mansqrt":"Renvoie la racine carrée de la valeur V.","mancos":"Renvoie le cosinus de la valeur V.","manabs":"Renvoie la valeur absolue de la valeur V.","manlen":"Renvoie la longueur de l'objet O (chaîne ou tableau).","manget":"Renvoie l'élément numéro I de l'objet O (chaîne ou tableau).","manfind":"Renvoie la position de la valeur I dans l'objet O (-1 si non trouvé).","mansub":"Renvoie la sous-chaîne de A commençant à la position I.","mansub2":"Renvoie la sous-chaîne de A commençant à la position I et de taille V.","manrgb2":"Renvoie sous la forme d'un tableau [R,G,B] la couleur courante.","manread":"Renvoie la valeur de la dernière touche pressée.","tipc1":"Afficher le premier indice","tipc2":"Afficher le deuxième indice","tipc3":"Afficher le troisième indice","tipcc":"Un indice coûte 1 point sur la note finale, souhaitez-vous continuer ?"]]></dct:description>
-        <dct:source>res/img/banners/it.svg,res/img/icon/tab/tab0*.svg,res/img/asset/misc/it*.svg</dct:source>
+        <dct:source>res/img/banners/it.svg,res/img/icon/tab/tab0*.svg,res/img/asset/misc/it*.svg,res/img/control/,res/img/background/asset/it01.svg,res/img/asset/fx/dialog01.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description rdf:about="urn:activity:correcter">
@@ -98,7 +98,7 @@
         <dct:title xml:lang="fr-FR">Géométrie</dct:title>
         <dct:abstract xml:lang="fr-FR">L'activité de géométrie offre un certain nombre de fonctionnalités permettant de réaliser les différentes figures demandées par l'énoncé.</dct:abstract>
         <dct:description xml:lang="en-US"><![CDATA[]]></dct:description>
-        <dct:description xml:lang="fr-FR"><![CDATA["guide":"Tracer dans la zone de travail les différentes figures demandées par l'énoncé.","guide2":"La note finale dépend du nombre d'opérations géométriques effectuées lors de l'exercice.","label_dots":"Points à relier","guide_dots":"Pour tracer un trait, il suffit de cliquer sur un premier point, puis de glisser vers un deuxième point tout en gardant le doigt appuyé sur la souris ou sur l'écran. Le trait doit alors changer de couleur. En relachant la pression, le trait est tracé."]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA["guide":"Tracer dans la zone de travail les différentes figures demandées par l'énoncé.","guide2":"La note finale dépend du nombre d'opérations géométriques effectuées lors de l'exercice.","label_dots":"Points à relier","guide_dots":"Pour tracer un trait, il suffit de cliquer sur un premier point, puis de glisser vers un deuxième point tout en gardant le doigt appuyé sur la souris ou sur l'écran. Le trait doit alors changer de couleur. En relachant la pression, le trait est tracé.","hseg":"En maintenant la [b]pression[/b] du doigt ou de la souris, [b]relier[/b] deux points permet de tracer le segment compris entre ces 2 extrémités.","hlin":"De la même façon que pour le segment, il est possible de créer une droite en [b]reliant 2 points[/b].","hcir":"Il est possible de créer un cercle de [b]2 façons distinctes[/b] : en [b]reliant 2 points[/b] ou en [b]cliquant sur 1 point[/b] et le cercle aura pour rayon la dernière valeur utilisée.","hbis":"[b]Relier[/b] 2 droites ou 2 segments non parallèles permet d'en afficher la bissectrice.","hint":"L'intersection de 2 éléments (droites, segments ou cercles) s'obtient en [b]glissant[/b] le doigt ou la souris d'un élément à l'autre.","hmid":"Utilisée comme l'[b]outil segment[/b], cette opération permet d'identifier le [b]milieu[/b] de deux points.","hpar":"Créer une droite parallèle en [b]cliquant[/b] sur une droite ou un segment, puis en [b]glissant[/b] jusqu'au point voulu.","hper":"Créer une droite perpendiculaire en [b]cliquant[/b] sur une droite ou un segment, puis en [b]glissant[/b] jusqu'au point voulu.","hsty":"Bien que facultatif, il est parfois utile de varier la [b]taille[/b] de ses tracés et de maintenir ainsi une certaine lisibilité","hcol":"Facultatif également, la [b]couleur[/b] des tracés peut être modifiée afin d'en faciliter la lecture.","hwar":"Ces outils ne sont pas forcément tous disponibles à chaque niveau.[br][b]Cliquez[/b] pour fermer cette fenêtre."]]></dct:description>
         <dct:source>res/img/banners/geometry.svg,res/img/banners/dots.svg,res/img/desktop/geometry/,res/img/icon/geometry/,res/img/numbers/dice/dice01*.svg</dct:source>
     </rdf:Description>
 
@@ -185,21 +185,21 @@
         <dct:title xml:lang="fr-FR">Opérations</dct:title>
         <dct:abstract xml:lang="fr-FR">L'activité propose à l'utilisateur de résoudre une opération arithmétiques (addition, soustraction, multiplication ou division) ou logiques (inclusion ou exclusion) à 2 opérandes ou plus.</dct:abstract>
         <dct:description xml:lang="fr-FR"><![CDATA["guide":"Poser l'opération et donner le bon résultat."]]></dct:description>
-        <dct:source>res/img/banners/operation.svg,res/img/icon/cell/futoshiki*.svg,res/img/asset/fx/target*.svg</dct:source>
+        <dct:source>res/img/banners/operation.svg,res/img/icon/cell/cell*.svg,res/img/asset/fx/target*.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description rdf:about="urn:activity:paint">
         <dct:title xml:lang="fr-FR">Peinture</dct:title>
         <dct:abstract xml:lang="fr-FR">Activité générique qui demande de peindre certains éléments dans la couleur adéquate. Il est, entre autres, possible d'émuler un jeu de type Picross.</dct:abstract>
         <dct:description xml:lang="fr-FR"><![CDATA["guide":"Choisir une couleur de remplissage et peindre les éléments appropriés.","pilabel":"Picross","piguide":"Retrouver le dessin caché en utilisant les indications fournies."]]></dct:description>
-        <dct:source>res/img/banners/paint.svg</dct:source>
+        <dct:source>res/img/banners/paint.svg,res/img/banners/picross.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description rdf:about="urn:activity:path">
         <dct:title xml:lang="fr-FR">Chemin</dct:title>
         <dct:abstract xml:lang="fr-FR">Le principe est ici de tracer un ou plusieurs chemins selon les contraintes liés à l'exercice.</dct:abstract>
         <dct:description xml:lang="fr-FR"><![CDATA["guide":"Déplacer le curseur afin de tracer le chemin demandé par l'exercice.","help":"Afficher une partie du tracé coûte 1 point sur la note finale. Voulez-vous continuer ?"]]></dct:description>
-        <dct:source>res/img/banners/dots.svg</dct:source>
+        <dct:source>res/img/banners/dots.svg,res/img/asset/misc/goal01.svg,res/img/control/tip.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description rdf:about="urn:activity:puzzle">
@@ -228,7 +228,7 @@
         <dct:title xml:lang="fr-FR">Ma petite boutique</dct:title>
         <dct:abstract xml:lang="fr-FR">Gérer une petite boutique en payant les fournisseurs, en facturant les clients et en rendant la monnaie.</dct:abstract>
         <dct:description xml:lang="fr-FR"><![CDATA["guide":"Gérer votre petite boutique en payant vos fournisseurs, en facturant vos clients et en leur rendant correctement la monnaie.","tr1":["Cela vous fera X sous.","Alors, cela fait X sous.","Vous en avez pour X sous.","Voila... cela fait X sous.","X sous, s'il vous plaît."],"tr2":["Cela vous fera X sous et Y centimes.","Alors, cela fait X sous et Y centimes.","Vous en avez pour X sous et Y centimes.","X sous et Y centimes.","X sous et Y centimes, s'il vous plaît."]]]></dct:description>
-        <dct:source>res/img/banners/operation.svg,res/img/background/landscape/shop01.svg,res/img/svginventoryicons/food/,res/img/svginventoryicons/drink/,res/img/svginventoryicons/misc/,res/img/svginventoryicons/tool/,res/img/svginventoryicons/pencil/,res/img/svginventoryicons/vegetable/,res/img/coin/,res/img/icon/tab/tab00.svg,res/img/ppvc/postman01.svg,res/img/ppvc/cyclist01.svg,res/img/ppvc/weirdo01.svg,res/img/ppvc/geek01.svg,res/img/ppvc/worker01.svg,res/img/ppvc/pop01.svg,res/img/ppvc/girl01.svg,res/img/ppvc/lizzie01.svg,res/img/ppvc/lottie01.svg</dct:source>
+        <dct:source>res/img/banners/operation.svg,res/img/background/landscape/shop01.svg,res/img/svginventoryicons/food/,res/img/svginventoryicons/drink/,res/img/svginventoryicons/misc/,res/img/svginventoryicons/tool/,res/img/svginventoryicons/pencil/,res/img/svginventoryicons/vegetable/,res/img/coin/,res/img/icon/tab/tab00.svg,res/img/ppvc/postman01.svg,res/img/ppvc/cyclist01.svg,res/img/ppvc/weirdo01.svg,res/img/ppvc/geek01.svg,res/img/ppvc/worker01.svg,res/img/ppvc/pop01.svg,res/img/ppvc/girl01.svg,res/img/ppvc/lizzie01.svg,res/img/ppvc/lottie01.svg,res/img/background/shop/change.svg,res/img/svginventoryicons/book/sketchbook01.svg,res/img/coin/coin1.svg,res/img/coin/coins.svg,res/img/svginventoryicons/hardware/calculator01.svg</dct:source>
     </rdf:Description>
 
     <rdf:Description rdf:about="urn:activity:sokoban">

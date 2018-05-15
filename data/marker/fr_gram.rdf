@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dct="http://purl.org/dc/terms/">
+	
+    <!-- article -->
+
+    <rdf:Description>
+        <dct:identifier>_ga001</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les adjectifs présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["J'ai un stylo |bleu| et deux crayons.","Les pandas |géants| sont des ours.","On est très |fortes| !","Il m'a prété son |nouveau| chapeau.","La mer est |calme| et le soleil brille."],"questions":[{"label":"adjectifs","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]adjectifs[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+
+    <rdf:Description>
+        <dct:identifier>_ga002</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les adjectifs présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["C'est |délicieux| !","Le |petit| chat boit du lait.","L'herbe est |verte| et le ciel est |bleu|.","Mais, je vois de |gros| nuages au loin.","Sa |petite| voiture est |rigolote|.","Ces carottes ne sont pas très |bonnes|.","Elle est |gentille| et |serviable|."],"questions":[{"label":"adjectifs","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]adjectifs[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+         
+    <!-- article déterminant-->
+
+    <rdf:Description>
+        <dct:identifier>_gd001</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les articles 'le' et 'la' présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["|La| récréation est finie.","|La| mer est calme.","|Le| lapin a mangé |la| carotte.","|La| bouteille est posée sur |la| table.","|Le| joueur en bleu a perdu |la| partie."],"questions":[{"label":"articles","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]articles 'le' et 'la'[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+
+   <rdf:Description>
+        <dct:identifier>_ga011</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les articles présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["|La| récréation est finie.","|La| mer est calme.","Marie mange |une| pomme.","|Les| nuages cachent |le| soleil.","|Les| carottes sont cuites."],"questions":[{"label":"articles","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]articles[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+
+    <!-- verb in sequence -->
+
+    <rdf:Description>
+        <dct:identifier>_gsv01</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les verbes présents dans le texte.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/wallpaper02.svg","text":["Marie |mange| une pomme.","Le petit chat |boit| du lait.","Le garçon |court| dans le jardin.","Les enfants |aiment| les sucreries.","Les nuages |cachent| le soleil."],"questions":[{"label":"verbe","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]verbes[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>_gsv01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:source>res/img/background/landscape/wallpaper02.svg</dct:source>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>_gsv02</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les verbes présents dans le texte.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/wallpaper02.svg","text":["Le matin, j'|allume| la radio.","Papa |prépare| le repas.","Les enfants |nagent| très bien.","Ma sœur et moi |sommes| jumelles.","Elles |partent| à la montagne cet été."],"questions":[{"label":"verbe","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]verbes[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>_gsv01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:source>res/img/background/landscape/wallpaper02.svg</dct:source>
+    </rdf:Description>
+	
+	
+    <!-- group nominal as subject in sequence -->
+	
+    <rdf:Description>
+        <dct:identifier>_gss01</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les groupes nominaux sujets présents dans le texte.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/blueboard01.svg","text":["|Marie| mange une pomme.","|Le petit chat| boit du lait.","|Le garçon| court dans le jardin.","|Les enfants| aiment les sucreries.","|De gros nuages| cachent le soleil."],"class":"e05","questions":[{"label":"groupe nominal sujet","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]groupes nominaux sujets[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>_gss01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:source>res/img/background/landscape/blueboard01.svg</dct:source>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>_gss02</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les groupes nominaux sujets présents dans le texte.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/blueboard01.svg","text":["Attention, |le paquet rouge| est à moi.","|Manger| fait du bien.","|Mon vieil ordinateur| est cassé.","|Paul et Virgine| jouent dans le jardin.","|Le son de cette guitare| est incroyable."],"class":"e05","questions":[{"label":"groupe nominal sujet","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]groupes nominaux sujets[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>_gss01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:source>res/img/background/landscape/blueboard01.svg</dct:source>
+    </rdf:Description>
+	
+    <!-- subject group nominal and verb in sequence -->
+    
+    <rdf:Description>
+        <dct:identifier>_gssv01</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les verbes et les groupes nominaux sujets présents dans le texte.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/gears01.svg","text":["Vite, |le train| $démarre$ !","|Le petit chat| $boit$ du lait.","Evidemment, |dormir| $repose$.","|Elles| $sont$ toutes très contentes.","Dans le jardin, |le rossignol| $chante$."],"class":"e05","questions":[{"label":"groupe nominal sujet","s":"|"},{"label":"verbe","s":"$"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]groupes nominaux sujets[/b] présents dans le texte, et les [b]verbes[/b] en rouge."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>_gssv01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:source>res/img/background/landscape/blueboard01.svg</dct:source>
+    </rdf:Description>
+	
+    <rdf:Description>
+        <dct:identifier>_gssv02</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les verbes et les groupes nominaux sujets présents dans le texte.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/gears01.svg","text":["|Manger| $fait$ du bien.","|La voiture de la voisine| $est$ en panne.","|J|'$observe$ les petits oiseaux.","|Les étoiles| $brillent$ dans le ciel.","Dans le jardin, $chante$ |le rossignol|."],"class":"e05","questions":[{"label":"groupe nominal sujet","s":"|"},{"label":"verbe","s":"$"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]groupes nominaux sujets[/b] présents dans le texte, et les [b]verbes[/b] en rouge."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>_gssv01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:source>res/img/background/landscape/blueboard01.svg</dct:source>
+    </rdf:Description>
+	
+    <!-- words and nouns -->
+
+    <rdf:Description>
+        <dct:identifier>_gw001</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les noms communs présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["La |récréation| est finie.","La |mer| est calme.","On veut des |frites| !","Les |nuages| cachent le |soleil|.","Les |carottes| sont cuites."],"questions":[{"label":"nom commun","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]noms communs[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+
+    <rdf:Description>
+        <dct:identifier>_gw002</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les noms communs présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["Le petit |chat| boit du |lait|.","Le |garçon| court dans le |jardin|.","J'aime faire du |vélo|.","Mon |oncle| lit le |journal|.","Parfois, le vieil |homme| s'ennuie."],"questions":[{"label":"nom commun","s":"|"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]noms communs[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+
+    <rdf:Description>
+        <dct:identifier>_gw003</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les noms communs présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["Le |poussin| sort de l'|oeuf|.","L'|oiseau| est sur la |branche|.","Le |crocodile| se baigne dans la |rivière|.","Au |zoo|, il y a des |lapins| et des |moutons|.","J'ai vu deux énormes |pandas|.","L'|ours| hiberne dans sa |tanière|."],"questions":[{"label":"nom commun","s":"|"}],"font":0.8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]noms communs[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+
+
+    <rdf:Description>
+        <dct:identifier>_gw011</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les noms présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["|Marie| mange une |pomme|.","|Amélie| nage très bien.","Mes |amis| s'appellent |Pierre| et |Richard|.","|Thomas| a de la |chance|.","Hier, j'ai vu |Gaston| à la |piscine|.","|Londres| est une grande |ville|."],"questions":[{"label":"nom commun","s":"|"}],"font":0.8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]noms (propres ou communs)[/b] présents dans le texte."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+
+
+    <rdf:Description>
+        <dct:identifier>_gw051</dct:identifier>
+        <dct:title xml:lang="fr-FR">Repérer les noms communs et propres présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["$Marie$ mange une |pomme|.","$Amélie$ nage très bien.","Mes |amis| s'appellent $Pierre$ et $Richard$.","$Thomas$ a de la |chance|.","Hier, j'ai vu $Gaston$ à la |piscine|.","$Londres$ est une grande |ville|."],"questions":[{"label":"nom commun","s":"|"},{"label":"nom propre","s":"$"}],"font":0.8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]noms communs[/b] et en rouge les [b]noms propres[/b]."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>3</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+
+    <!-- ajective and noun -->
+
+    <rdf:Description>
+        <dct:identifier>_gaw001</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les adjectifs et les noms présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["De |gros| $nuages$ cachent le $soleil$.","J'ai un $stylo$ |bleu| et deux $crayons$.","Le |gros| $chat$ a vu deux |petites| $souris$.","Mes $lapins$ sont dans le $jardin$.","Mon $bulletin$ de $notes$ est |bon|."],"questions":[{"label":"adjectifs","s":"|"},{"label":"noms","s":"$"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Dans le texte, coloriez en bleu les [b]adjectifs[/b] et les [b]noms[/b] en rouge."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+    
+    <!-- noun and verbs -->
+
+    <rdf:Description>
+        <dct:identifier>_gvw001</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les verbes et les noms présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["Mes |lapins| $sont$ dans le |jardin|.","Les |enfants| $aiment$ les |sucreries|.","Les |pandas| géants $sont$ des |ours|.","La |récréation| $est$ finie.","Les |nuages| $cachent$ le |soleil|."],"questions":[{"label":"noms","s":"|"},{"label":"verbes","s":"$"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Dans le texte, coloriez en bleu les [b]noms[/b] et les [b]verbes[/b] en rouge."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+    
+    
+    <!-- ajective, noun and verb -->
+
+    <rdf:Description>
+        <dct:identifier>_gavw001</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les adjectifs, les noms et les verbes présents dans le texte.</dct:title>
+        <dct:description><![CDATA["text":["L'$ours$ %hiverne% dans sa $tanière$.","Mon $bulletin$ de $notes$ %est% |bon|.","De |gros| $nuages$ %cachent% le $soleil$.","Il %a% plein de |nouveaux| $jouets$.","La $mer$ %est% |calme| et le $soleil$ %brille%."],"questions":[{"label":"adjectifs","s":"|"},{"label":"noms","s":"$"},{"label":"verbes","s":"%"}],"font":1]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Dans le texte, coloriez en bleu les [b]adjectifs[/b], les [b]noms[/b] en rouge et les [b]verbes[/b] en vert."]]></dct:description>
+        <dct:extent>1</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>gavw001</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+    </rdf:Description>
+    
+    <!-- gender -->
+
+   <rdf:Description>
+        <dct:identifier>_gg01</dct:identifier>
+        <dct:title xml:lang="fr-FR">Repérer dans le texte les noms masculins et les noms féminins précédés des articles 'le','la','un' ou 'une'.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/greenboard01.svg","text":["La $récréation$ est finie.","La $mer$ est calme.","J'ai vu un |oiseau| sur une $branche$.","Le |soleil| se cache derrière un |nuage|.","Le |lapin| a mangé une $carotte$."],"questions":[{"label":"nom masculin","s":"|"},{"label":"nom féminin","s":"$"}],"font":0.9]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]noms masculins[/b] et en rouge les [b]noms féminins[/b]."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>_gg01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:isPartOf>gender</dct:isPartOf>
+		<dct:source>res/img/background/landscape/greenboard01.svg</dct:source>
+    </rdf:Description>
+
+   <rdf:Description>
+        <dct:identifier>_gg02</dct:identifier>
+        <dct:title xml:lang="fr-FR">Repérer dans le texte les noms masculins et les noms féminins précédés des articles 'le','la','un' ou 'une'.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/greenboard01.svg","text":["Une $voiture$ rouge passe sur le |pont|.","A la $ferme$, j'ai vu 3 $poules$ et 2 $vaches$.","Une $souris$ a mangé le |fromage|.","Le |tailleur| a cousu un beau |pantalon|.","Le |gendarme| court après un |voleur|."],"questions":[{"label":"nom masculin","s":"|"},{"label":"nom féminin","s":"$"}],"font":0.9]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]noms masculins[/b] et en rouge les [b]noms féminins[/b]."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>1</dct:type>
+        <dct:alternative>_gg01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:isPartOf>gender</dct:isPartOf>
+		<dct:source>res/img/background/landscape/greenboard01.svg</dct:source>
+    </rdf:Description>
+
+   <rdf:Description>
+        <dct:identifier>_gg03</dct:identifier>
+        <dct:title xml:lang="fr-FR">Repérer dans le texte les noms masculins et les noms féminins précédés des articles 'les','l', ou 'des'.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/greenboard01.svg","text":["Des |oiseaux| ont mangé les $graines$.","L'$autruche$ a des grandes $plumes$.","Les |enfants| aiment les $sucreries$.","Les |nuages| cachent les $étoiles$.","J'ai mal à l'$oreille$."],"questions":[{"label":"nom masculin","s":"|"},{"label":"nom féminin","s":"$"}],"font":0.9]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]noms masculins[/b] et en rouge les [b]noms féminins[/b]."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>_gg01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:isPartOf>gender</dct:isPartOf>
+		<dct:source>res/img/background/landscape/greenboard01.svg</dct:source>
+    </rdf:Description>
+	
+	<rdf:Description>
+        <dct:identifier>_gg11</dct:identifier>
+        <dct:title xml:lang="fr-FR">Souligner les noms d'insectes suivant leur genre.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/greenboard01.svg","text":["La $chenille$ s'est changée en |papillon|.","L'$abeille$, la $guêpe$ et le |moustique| peuvent piquer.","La $mouche$, elle, ne pique pas.","J'aime les $coccinelles$, mais pas trop les |scorpions|.","La $puce$ est plus petite que la $cigale$."],"questions":[{"label":"nom masculin","s":"|"},{"label":"nom féminin","s":"$"}],"font":0.8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"[b]Coloriez[/b] les noms de [b]petites bêtes[/b] selon leur genre."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>3</dct:type>
+        <dct:alternative>_gg01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:isPartOf>gender</dct:isPartOf>
+		<dct:source>res/img/background/landscape/greenboard01.svg</dct:source>
+    </rdf:Description>
+
+    <!-- number -->
+
+    <rdf:Description>
+        <dct:identifier>_gu01</dct:identifier>
+        <dct:title xml:lang="fr-FR">Repérer les noms au singulier et les noms au pluriel présents dans le texte.</dct:title>
+        <dct:description><![CDATA["background":"res/img/background/landscape/landscape01.svg","text":["Les $nuages$ cachent le |soleil|.","L'|autruche| a des grandes $plumes$.","Des $oiseaux$ ont mangé les $graines$.","J'ai vu un |oiseau| sur une |branche|.","Les $lapins$ ont mangé une |carotte|.","Mon |oncle| lit le |journal|."],"questions":[{"label":"nom au singulier","s":"|"},{"label":"nom au pluriel","s":"$"}],"font":0.8]]></dct:description>
+        <dct:description xml:lang="fr-FR"><![CDATA[,"exercice":"Coloriez en bleu les [b]noms au singulier[/b] et en rouge les [b]noms au pluriel[/b]."]]></dct:description>
+        <dct:extent>2</dct:extent>
+        <dct:subject>frgram</dct:subject>
+        <dct:educationLevel>2</dct:educationLevel>
+        <dct:type>2</dct:type>
+        <dct:alternative>_gu01</dct:alternative>
+        <dct:coverage xml:lang="fr-FR">CE1</dct:coverage>
+		<dct:source>res/img/background/landscape/greenboard01.svg</dct:source>
+    </rdf:Description>
+    
+    
+</rdf:RDF>

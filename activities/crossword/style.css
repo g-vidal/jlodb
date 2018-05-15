@@ -18,7 +18,7 @@
 .crossword div#submit                     { font-size:1.5em; height:1em;width:1em; cursor:pointer;
                                             position:absolute; top:7em; left:0em; z-index:3; }
 .crossword div#board                      { width:12em; float:left; height:12em; }
-.crossword div#board>table                { background-color:rgb(53,34,34); border: 1px solid rgb(53,34,34);
+.crossword div#board>table                { background-color:rgb(53,34,34); border: .2em solid rgb(53,34,34);
                                             border-spacing:0; }
 .crossword div#board div.bg               { background-color:rgb(255,252,246); color:rgb(53,34,34); height:1em; width:1em;
                                             cursor:pointer; }
@@ -38,27 +38,25 @@
 .crossword div#board table.hint div.s     { background-color:rgba(53,34,34,0.2); }
 
 .crossword div#menu                       { width:3.9em; float:left; background-color:rgba(255,255,255,0.8); border-radius:0.2em;
-                                            margin-top:0.2em; }
-.crossword div#menu>div                   { clear:both; border:1px solid black; border-width:0 0 1px 0; }
+                                            margin-top:0.2em; height:11.6em; }
+.crossword div#menu>div                   { clear:both; }
 .crossword div#menu #title                { font-size:0.8em; text-align:center; height:1.2em; }
-.crossword.tinytitle div#menu #title      { font-size:0.6em; height:1.2em; }
-.crossword.notitle div#menu #title        { display:none; }
-.crossword div#menu #exercice             { font-size:0.35em; text-align:justify; padding:.1em .5em; height:2.4em;
+.crossword div#menu #exercice             { font-size:0.3em; text-align:justify; padding:.1em .5em; height:10%;
                                             background-image:url("../../res/img/default/pattern/line01.svg"); background-repeat:repeat; }
-.crossword.noex div#menu #exercice        { display:none; }
-.crossword div#definition                 { font-size:.5em; padding:0 .2em; height:3.4em; background-color:white;  }
+.crossword div#definition                 { font-size:.4em; padding:0 .2em; height:18%; background-color:white;  }
 .crossword div#definition div             { text-align:justify;  }
 .crossword div#definition.center div        { text-align:center; }
-.crossword.notitle div#definition         { height:5.2em; }
-.crossword.noex div#definition            { height:5.2em; }
-.crossword.noex.notitle div#definition    { height:7em; }
+
+
 .crossword.nodef div#definition           { display:none; }
-.crossword.nodef div#menu div#exercice          { height:8em; }
-.crossword.nodef.notitle div#menu div#exercice  { height:10em; }
+.crossword.noex div#menu #exercice        { display:none; }
+.crossword.nohint div#buttons			  { display:none; }
+
+
 .crossword div#buttons                    { width:4.2em; }
-.crossword div#menu .bg                   { float:left; font-size:1.5em; border-radius:.3em; margin:.05em .1em; padding:.05em; opacity:0.6; }
-.crossword div#menu .bg.s                 { background-color:black; opacity:1; }
-.crossword div#menu .icon                 { background-color:white; border-radius:.25em; cursor:pointer; }
+.crossword div#buttons .bg                   { float:left; font-size:1.5em; border-radius:.3em; margin:.05em .1em; padding:.05em; opacity:0.6; }
+.crossword div#buttons .bg.s                 { background-color:black; opacity:1; }
+.crossword div#buttons .icon                 { background-color:white; border-radius:.25em; cursor:pointer; }
 
 .crossword div#menu #input                { border:0; }
 .crossword div#menu .num                  { font-size:1em; margin:.1em 0 .1em .1em; display:none; }

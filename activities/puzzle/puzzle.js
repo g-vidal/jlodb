@@ -215,8 +215,10 @@
             $this.find("#ttext").removeClass("legend");
             if (settings.timg) {
                 var img = $.isArray(settings.timg)?settings.timg[settings.puzzleid]:settings.timg;
-                if (img) { $this.find("#timg").html("<img src='"+img+"'/>").show();
-                           $this.find("#ttext").addClass("legend"); }
+                if (img) {
+					if (img.indexOf(".svg")!=-1) 	{ $this.find("#timg").html("<img src='"+img+"'/>").show(); }
+					else							{ $this.find("#timg").html(img).show(); }
+                    $this.find("#ttext").addClass("legend"); }
             }
             if (settings.ttxt) {
                 var txt = $.isArray(settings.ttxt)?settings.ttxt[settings.puzzleid]:settings.ttxt;
@@ -367,7 +369,7 @@
                     // INITIALIZE THE PIECE
                     var vX = translate[0], vY = translate[1], vZ = rotate;
                     var id = $(this).attr("id");
-                    if (settings.rotation>0 && $(this).find(".rot")) {
+                    if (settings.rotation>0 && $(this).find(".rot") && $(this).find(".rot").length) {
                         vZ = settings.rotation*Math.floor(Math.random()*(360/settings.rotation));
                     }
                     if (settings.init) {
@@ -403,7 +405,15 @@
             settings.magzone = [];
             for (var i in settings.elts) {
                 settings.magzone.push([settings.elts[i].origin.translate[0], settings.elts[i].origin.translate[1]]); }
-            if (settings.magnetic) { for (var i in settings.magnetic) { settings.magzone.push(settings.magnetic[i]); } }
+            if (settings.magnetic) { for (var i in settings.magnetic) {
+				var m = settings.magnetic[i];
+				if (m.length==6) {
+					for (var ii=0; ii<m[4]; ii++) for (var jj=0; jj<m[5]; jj++) {
+						settings.magzone.push([m[0]+m[2]*ii,m[1]+m[3]*jj]);
+					}
+				}
+				else { settings.magzone.push(m); }
+			} }
             
             // MOVE PIECES
             $this.bind('touchmove mousemove', function(event) {
@@ -498,8 +508,8 @@
                         }
                         
                         // CHECK IF CUMUL IS AUTHORIZED HERE
-                        var cumul = false;
-                        for (var c in settings.cumul) {
+                        var cumul = (typeof(settings.cumul)=="boolean")?settings.cumul:false;
+                        if (typeof(settings.cumul)=="object") for (var c in settings.cumul) {
                             if (settings.cumul[c][0] == elt.current.translate[0] &&
                                 settings.cumul[c][1] == elt.current.translate[1] ) { cumul = true; }
                         }

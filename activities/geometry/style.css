@@ -1,13 +1,16 @@
 .geometry                                       { background-image:url("../../res/img/default/pattern/line02.svg"); background-repeat:repeat;}
+.geometry>div									{ width:16em;height:12em; }
 .geometry table                                 { border-collapse:collapse; border-spacing:0;  font-size:1em; }
 .geometry td                                    { margin:0; padding:0; }
 .geometry div#key                               { width:5em; height:5em; margin:0 auto; cursor:pointer; }
-.geometry div#buttons                           { background-color:rgb(53,34,34);overflow:hidden;
-                                                  float:left; margin:.1em; padding:.05em; margin-top:3.8em; font-size:.8em; }
+.geometry div#buttons                           { background-color:rgb(53,34,34);overflow:hidden; width:2em;
+                                                  float:left; margin-left:.1em; padding:.05em; margin-top:3.5em; font-size:.9em; }
 .geometry div#actions table                     { }
 .geometry div#actions td                        { width:1em; height:1em; overflow:hidden; background-color:white;}
 .geometry div#actions div.action                { width:1em; height:1em; cursor:pointer;
                                                   background-image:url('../../res/img/svginventoryicons/background/border/square01.svg'); }
+.geometry div#actions div#about					{ background-color:rgb(53,34,34); cursor:help; }
+.geometry div#actions div#about img				{ opacity:1 !important; }
 .geometry div#actions div.action.a2             { background-image:url('../../res/img/svginventoryicons/background/border/square02.svg'); }
 .geometry div#actions div.action.disable img    { opacity:.3; cursor:default; }
 .geometry div#actions div.action.s              { background-color:rgba(196,184,255,1); }
@@ -44,7 +47,7 @@
 .geometry div#boardframe                        { width:13.8em; height:8em; overflow:hidden; float:right; margin:.08em;
                                                   border-radius:.5em; background-image:url("../../res/img/background/book01a.svg");
                                                   background-repeat:repeat;}
-.geometry div#board                             { width:13.8em; height:10.35em; overflow:hidden;   }
+.geometry div#board                             { width:100%; height:10.35em; overflow:hidden;   }
 .geometry div#text                              { width:45.2em; height:10.5em; overflow:hidden;
                                   margin:.2em; border-radius:.25em; font-size:.35em; clear:both;
                                   background-image:url("../../res/img/default/pattern/line01.svg");
@@ -73,7 +76,8 @@
 .geometry.black div#boardframe                  { background-image:none; background-color:black; }
 .geometry.large div#boardframe                  { height:10.35em; }
 .geometry.hide  div#buttons                     { display:none; }
-.geometry.large div#text                        { height:3.2em; }
+.geometry.large div#text                        { height:3.9em; }
+.geometry.upcancel #cancel2						{ top:72%; }
 
 .geometry.full  div#buttons                     { display:none; }
 .geometry.full  div#text                        { display:none; }
@@ -91,4 +95,12 @@
 .geometry.dots  div#splashex #guide_dots        { position:absolute; font-size:0.8em; top:2%; left:2%; width:35%;text-align:justify;
                                                   border:.5em solid white; padding:.5em; font-style: italic;
                                                   background-image:url("../../res/img/default/pattern/line01.svg"); background-repeat:repeat; }
+												  
+.geometry div#help		{ width:16em; height:12em; background-color:rgba(0,0,0,0.5);position:absolute;top:0;left:0; display:none;  }
+.geometry div#help>div	{ background-color:rgba(255,255,255,0.9); width:80%; height:80%; margin:5% auto; font-size:.3em; border:.2em solid white; cursor:pointer; }
+.geometry div#help #xhelp { font-size:2em; cursor:pointer; }
+.geometry div#help .ehelp { width:46%; border:.1em solid black; margin:.2em; float:left; height:5em; }
+.geometry div#help .ehelp .icon { float:left; font-size:5em; margin-right:.1em;  }
+.geometry div#help .ehelp .label { margin-left:.5em; font-size:.7em; }
+.geometry div#help #hwar { clear:both; }
 

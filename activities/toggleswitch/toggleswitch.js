@@ -20,6 +20,7 @@
         fontex      : 1,
         fonttag     : 1,
         errelt      : "",                                       // wrong element
+		automatic	: 0,										// Automatic submit
         background  : "",
         debug       : true                                      // Debug mode
     };
@@ -43,8 +44,23 @@
     var onClicks = {
         onlyone : function($this, elts, id, settings) {
             var nb=0; for (var i in elts) { if (elts[i].state==1) nb++; } return (elts[id].state==1 || nb<1);
+        },
+        onlytwo : function($this, elts, id, settings) {
+            var nb=0; for (var i in elts) { if (elts[i].state==1) nb++; } return (elts[id].state==1 || nb<2);
         }
     }
+	
+	var autos = {
+		one : function($this, elts, id, settings) {
+            var nb=0; for (var i in elts) { if (elts[i].state==1) nb++; } return (nb==1);
+        },
+		two : function($this, elts, id, settings) {
+            var nb=0; for (var i in elts) { if (elts[i].state==1) nb++; } return (nb==2);
+        },
+		full : function($this, elts, id, settings) {
+            var nb=0; for (var i in elts) { if (elts[i].state==0) nb++; } return (nb==0);
+        }
+	}
 
     // private methods
     var helpers = {
@@ -177,6 +193,15 @@
                     }
                     else { helpers.refresh($this, elt); }
                 }
+				
+				if (settings.automatic) {
+					var toSubmit = false;
+					if (autos[settings.automatic])
+						 { toSubmit = autos[settings.automatic]($this, settings.current.elts, id, settings); }
+					else { toSubmit = eval('('+settings.automatic+')')($this, settings.current.elts, id, settings); }
+					
+					if (toSubmit) { $this.toggleswitch('valid'); }
+				}
             }
         },
         fill: function($this) {
@@ -192,7 +217,7 @@
                 $(this).bind("mousedown touchstart",function(event){ helpers.click($this,index); event.preventDefault();});
             });
 
-            // HANDLE THE ILLUSTRATION
+            // HANDLE THE ILLUSTRATION (deprecated : use [img] instead in legend)
             var vIllus = settings.illustration;
             if ($.isArray(vIllus)) { vIllus = vIllus[settings.it%vIllus.length]; }
 
@@ -206,6 +231,7 @@
             if ($.isArray(vLegend)) { vLegend = vLegend[settings.it%vLegend.length]; }
 
             if (vLegend) { $this.find("#legend").html(helpers.format(vLegend)); }
+			if (settings.legendsize) { $this.find("#legend").css("font-size",(0.4*settings.legendsize)+"em"); }
 			
 			// HANDLE STATIC TEXT OR IMAGE IN SVG
             var txt = settings.current.txt;
@@ -217,8 +243,9 @@
             }
             
             // HANDLE THE ERRELT
-            if (settings.errelt) {
-                $this.find((settings.current.group?"#"+settings.current.group+" ":"")+"#"+settings.errelt).bind(
+			var errelt = settings.current.errelt || settings.errelt;
+            if (errelt) {
+                $this.find((settings.current.group?"#"+settings.current.group+" ":"")+"#"+errelt).bind(
                     "mousedown touchstart",function(event) {
                         
                     var vEvent = (event && event.originalEvent && event.originalEvent.touches &&
@@ -289,6 +316,11 @@
                 $this.find("#exercice").show(); }
             else { $this.find("#exercice").hide(); }
             $this.find("#exercice #content").css("font-size",settings.fontex+"em");
+			
+			// AUTOMATIC VALIDATION
+			if (settings.automatic) {
+				$this.addClass("automatic");
+			}
 
             if (settings.current.template) {
                 var debug = "";
@@ -306,6 +338,7 @@
                     settings.svg.load(templatepath, { addTo: true, changeSize: true, onLoad:function() {
                         
                         if (settings.current.svgclass) { $(settings.svg.root()).attr("class",settings.current.svgclass); }
+						if (settings.current.group)		{ $("#"+settings.current.group, settings.svg.root()).show(); }
                         $this.find(".t").each(function(index) {
                             var t = settings.current.t;
                             if (t && t.length>index) {
@@ -325,7 +358,8 @@
                             if (vRegexp) { value = value.replace(vRegexp, settings.regexp.to); }
                             if (settings.current.t && settings.current.t.length>index) {
                                 $(this).html("<div style='font-size:"+settings.font+"em;margin-top:"+
-                                             (1-settings.font)/(2*settings.font)+"em;'>"+helpers.format(value.toString())+"</div>"); }});
+                                             (settings.font<1?(1-settings.font)/(2*settings.font):0)+"em;'>"+
+											 helpers.format(value.toString())+"</div>"); }});
                         helpers.fill($this);
                     });
                 }
@@ -355,7 +389,7 @@
                     $this.find("#timer").addClass("err");
                 }
             }
-            if (settings.interactive) { settings.timer.id = setTimeout(function() { helpers.timer($this); },200); }
+            if (settings.timer.id) { settings.timer.id = setTimeout(function() { helpers.timer($this); },200); }
         }
 
     };
@@ -408,6 +442,7 @@
                 var $this   = $(this) , settings = helpers.settings($this);
                 if (settings.interactive) {
                     settings.interactive = false;
+					if (settings.timer.id) { clearTimeout(settings.timer.id); settings.timer.id = 0; }
                     var wrongs  = 0;
                     if (settings.scorefct) { wrongs = eval('('+settings.scorefct+')')($this, settings.current.elts, settings); }
                     else {
@@ -415,7 +450,15 @@
                             if(!settings.current.result || settings.current.result.length<i ||
                                 settings.current.elts[i].state!=settings.current.result[i]) {
                                 wrongs++;
-                                settings.current.elts[i].state = -1;
+								
+								var state = -1;
+								if (settings.wrong && settings.wrong.mask) {
+									if (settings.wrong.mask.indexOf(settings.current.elts[i].state)==-1) {
+										state = settings.current.elts[i].state;
+									}
+								}
+								
+                                settings.current.elts[i].state = state;
                             }
                         }
                     }
@@ -429,8 +472,8 @@
                     $this.addClass("end");
 
                     $this.find("#effects>div").hide();
-                    if (!wrongs) { $this.find("#effects #good").show(); }
-                    else         { $this.find("#effects #wrong").show(); }
+                    if (!wrongs) { $this.find("#effects #good").css("opacity",0).show().animate({opacity:1},500); }
+                    else         { $this.find("#effects #wrong").css("opacity",0).show().animate({opacity:1},500); }
                     $this.find("#effects").show();
 
                     if (settings.it>=settings.number) {
@@ -450,7 +493,8 @@
             },
             quit: function() {
                 var $this = $(this) , settings = helpers.settings($this);
-                settings.interactive = false;
+                settings.interactive 	= false;
+				if (settings.timer.id) { clearTimeout(settings.timer.id); settings.timer.id = 0; }
                 settings.context.onquit($this,{'status':'abort'});
             },
             next: function() {
@@ -460,7 +504,7 @@
                     settings.timer.begin = Date.now();
                     settings.timer.id = setTimeout(function() { helpers.timer($this); },200);
                 }
-                $(this).find("#submit").show();
+                if (!settings.automatic) { $(this).find("#submit").show(); }
             },
             refresh: function() {
                 var $this = $(this) , settings = helpers.settings($this);
